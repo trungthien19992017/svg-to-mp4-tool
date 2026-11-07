@@ -1,0 +1,5 @@
+GSAP 3.15.0
+Standard 'no charge' license: https://gsap.com/standard-license.
+https://gsap.com/community/standard-license/
+Original copyright/license headers are retained in all copied scripts.
+The package declares its license by URL; consult that license before distribution.

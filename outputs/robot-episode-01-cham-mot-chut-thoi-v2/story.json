@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "1.0",
+  "projectId": "robot-episode-01-cham-mot-chut-thoi",
+  "title": "Chạm một chút thôi",
+  "description": "Hai robot cùng ngắm mưa, rồi nắm tay nhau.",
+  "seed": 20261107,
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "format": "mp4"
+  },
+  "render": {
+    "crf": 18,
+    "preset": "veryfast"
+  },
+  "assets": [
+    {
+      "id": "female-art",
+      "path": "assets/characters/robot-female.svg",
+      "type": "character"
+    },
+    {
+      "id": "male-art",
+      "path": "assets/characters/robot-male.svg",
+      "type": "character"
+    },
+    {
+      "id": "room",
+      "path": "assets/backgrounds/rainy-room.svg",
+      "type": "background"
+    },
+    {
+      "id": "layer-back",
+      "path": "assets/props/layer-back.svg",
+      "type": "background"
+    },
+    {
+      "id": "layer-front",
+      "path": "assets/props/layer-front.svg",
+      "type": "object"
+    },
+    {
+      "id": "heart",
+      "path": "assets/objects/heart.svg",
+      "type": "object"
+    },
+    {
+      "id": "music",
+      "path": "audio/music/warm-theme.wav",
+      "type": "audio"
+    },
+    {
+      "id": "rain",
+      "path": "audio/ambience/soft-rain.wav",
+      "type": "audio"
+    },
+    {
+      "id": "touch",
+      "path": "audio/sfx/hand-touch.wav",
+      "type": "audio"
+    },
+    {
+      "id": "ending",
+      "path": "audio/music/ending.wav",
+      "type": "audio"
+    }
+  ],
+  "characters": [
+    {
+      "id": "female",
+      "assetId": "female-art",
+      "parts": [
+        "f-root",
+        "f-head",
+        "f-eyes",
+        "f-arm-left",
+        "f-arm-right",
+        "f-leg-l",
+        "f-leg-r"
+      ]
+    },
+    {
+      "id": "male",
+      "assetId": "male-art",
+      "parts": [
+        "m-root",
+        "m-head",
+        "m-eyes",
+        "m-arm-left",
+        "m-arm-right",
+        "m-leg-l",
+        "m-leg-r"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-001",
+      "name": "Cùng nhìn mưa",
+      "duration": 5,
+      "source": "scenes/scene-001.js",
+      "characters": [
+        "female",
+        "male"
+      ],
+      "background": "room",
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "scene-002",
+      "name": "Chút do dự",
+      "duration": 6,
+      "source": "scenes/scene-002.js",
+      "characters": [
+        "female",
+        "male"
+      ],
+      "background": "room",
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "scene-003",
+      "name": "Hiểu lòng nhau",
+      "duration": 6,
+      "source": "scenes/scene-003.js",
+      "characters": [
+        "female",
+        "male"
+      ],
+      "background": "room",
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "scene-004",
+      "name": "Chạm một chút thôi",
+      "duration": 7,
+      "source": "scenes/scene-004.js",
+      "characters": [
+        "female",
+        "male"
+      ],
+      "background": "room",
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "scene-005",
+      "name": "Bên nhau",
+      "duration": 6,
+      "source": "scenes/scene-005.js",
+      "characters": [
+        "female",
+        "male"
+      ],
+      "background": "room",
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    }
+  ],
+  "audio": [
+    {
+      "id": "music-main",
+      "assetId": "music",
+      "start": 0,
+      "offset": 0,
+      "duration": 30,
+      "volume": 0.28,
+      "fadeIn": 0.4,
+      "fadeOut": 0.7
+    },
+    {
+      "id": "rain-main",
+      "assetId": "rain",
+      "start": 0,
+      "offset": 0,
+      "duration": 30,
+      "volume": 0.24,
+      "fadeIn": 0.4,
+      "fadeOut": 0.7
+    },
+    {
+      "id": "touch-sfx",
+      "assetId": "touch",
+      "start": 21.1,
+      "offset": 0,
+      "duration": 0.7,
+      "volume": 0.7,
+      "fadeIn": 0.08,
+      "fadeOut": 0.2
+    },
+    {
+      "id": "ending-theme",
+      "assetId": "ending",
+      "start": 25,
+      "offset": 0,
+      "duration": 5,
+      "volume": 0.42,
+      "fadeIn": 0.4,
+      "fadeOut": 0.7
+    }
+  ],
+  "duration": 30
+}

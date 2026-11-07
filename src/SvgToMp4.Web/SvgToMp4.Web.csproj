@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="../SvgToMp4.Worker/SvgToMp4.Worker.csproj" />
+  </ItemGroup>
+</Project>

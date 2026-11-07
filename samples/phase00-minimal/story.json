@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0",
+  "projectId": "phase00-minimal",
+  "title": "Phase 00 - deterministic circle",
+  "video": { "width": 720, "height": 1280, "fps": 24, "format": "mp4" },
+  "scenes": [
+    { "id": "scene-001", "duration": 3, "source": "scenes/scene-001.js" }
+  ]
+}

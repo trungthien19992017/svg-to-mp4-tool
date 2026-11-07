@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 390"><ns0:g xmlns:ns0="http://www.w3.org/2000/svg" id="mascot-female"><ns0:g id="f-root">
+    
+    <ns0:g id="f-leg-l"><ns0:path d="M 165 325 Q 165 355 175 355 Q 185 355 185 325 Z" fill="#b0e0e6" stroke="#1d353b" stroke-width="4.5" stroke-linejoin="round" /></ns0:g>
+    <ns0:g id="f-leg-r"><ns0:path d="M 215 325 Q 215 355 225 355 Q 235 355 235 325 Z" fill="#b0e0e6" stroke="#1d353b" stroke-width="4.5" stroke-linejoin="round" /></ns0:g>
+
+    
+    <ns0:path d="M 155 260 Q 150 330 200 330 Q 250 330 245 260 Z" fill="#b0e0e6" stroke="#1d353b" stroke-width="4.5" stroke-linejoin="round" />
+    <ns0:path d="M 175 295 Q 200 305 225 295" stroke="#1d353b" stroke-width="3.5" fill="none" stroke-linecap="round" />
+
+    
+    <ns0:g id="f-arm-left"><ns0:path d="M 160 270 C 135 265 135 300 155 305 C 165 308 175 290 170 275" fill="#b0e0e6" stroke="#1d353b" stroke-width="4.5" stroke-linejoin="round" /></ns0:g>
+    
+    
+    <ns0:g id="f-arm-right"><ns0:path d="M 240 270 C 265 265 265 300 245 305 C 235 308 225 290 230 275" fill="#b0e0e6" stroke="#1d353b" stroke-width="4.5" stroke-linejoin="round" /></ns0:g>
+
+    
+    <ns0:path d="M 175 272 C 160 255 185 245 195 265 Z" fill="#fca1b7" stroke="#1d353b" stroke-width="4" />
+    <ns0:path d="M 225 272 C 240 255 215 245 205 265 Z" fill="#fca1b7" stroke="#1d353b" stroke-width="4" />
+    <ns0:rect x="190" y="260" width="20" height="15" rx="6" fill="#fca1b7" stroke="#1d353b" stroke-width="4" />
+
+    
+    <ns0:g id="f-head">
+      <ns0:circle cx="200" cy="180" r="105" fill="#b0e0e6" stroke="#1d353b" stroke-width="5" />
+      <ns0:rect x="175" y="32" width="50" height="40" rx="10" fill="#fca1b7" stroke="#1d353b" stroke-width="4" />
+      <ns0:rect x="120" y="115" width="160" height="125" rx="60" fill="#ffffff" stroke="#1d353b" stroke-width="4.5" />
+      
+      <ns0:g class="expr f-expr" data-e="default">
+      <ns0:g id="f-eyes">
+        <ns0:circle cx="155" cy="165" r="14" fill="#1d353b" />
+        <ns0:circle cx="151" cy="159" r="5" fill="#ffffff" />
+        <ns0:circle cx="158" cy="170" r="2" fill="#ffffff" />
+      </ns0:g>
+      <ns0:path d="M 230 160 L 245 170 L 260 160" fill="none" stroke="#1d353b" stroke-width="5.5" stroke-linecap="round" />
+      <ns0:path d="M 190 190 Q 200 202 210 190" fill="none" stroke="#1d353b" stroke-width="4.5" stroke-linecap="round" /></ns0:g><ns0:g class="expr f-expr" data-e="happy" style="display:none"><ns0:circle cx="155" cy="165" r="14" fill="#1d353b" /><ns0:circle cx="151" cy="159" r="5" fill="#fff" /><ns0:circle cx="158" cy="170" r="2" fill="#fff" /><ns0:circle cx="245" cy="165" r="14" fill="#1d353b" /><ns0:circle cx="241" cy="159" r="5" fill="#fff" /><ns0:circle cx="248" cy="170" r="2" fill="#fff" /><ns0:path d="M176 186 Q200 218 224 186Z" fill="#fca1b7" stroke="#1d353b" stroke-width="4.5" stroke-linejoin="round" /><ns0:ellipse cx="134" cy="194" rx="12" ry="7" fill="#fca1b7" opacity="0.75" /><ns0:ellipse cx="266" cy="194" rx="12" ry="7" fill="#fca1b7" opacity="0.75" /></ns0:g><ns0:g class="expr f-expr" data-e="sad" style="display:none"><ns0:circle cx="155" cy="172" r="14" fill="#1d353b" /><ns0:circle cx="151" cy="166" r="6" fill="#fff" /><ns0:circle cx="158" cy="177" r="2" fill="#fff" /><ns0:circle cx="245" cy="172" r="14" fill="#1d353b" /><ns0:circle cx="241" cy="166" r="6" fill="#fff" /><ns0:circle cx="248" cy="177" r="2" fill="#fff" /><ns0:path d="M132 152 L174 140 M226 140 L268 152" fill="none" stroke="#1d353b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5" /><ns0:path d="M184 206 Q200 192 216 206" fill="none" stroke="#1d353b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5" /><ns0:path class="tear" d="M138 190 Q130 202 138 208 Q146 202 138 190Z" fill="#8fd8f0" stroke="#1d353b" stroke-width="3" /></ns0:g><ns0:g class="expr f-expr" data-e="surprised" style="display:none"><ns0:circle cx="155" cy="166" r="18" fill="#1d353b" /><ns0:circle cx="151" cy="160" r="7" fill="#fff" /><ns0:circle cx="158" cy="171" r="2" fill="#fff" /><ns0:circle cx="245" cy="166" r="18" fill="#1d353b" /><ns0:circle cx="241" cy="160" r="7" fill="#fff" /><ns0:circle cx="248" cy="171" r="2" fill="#fff" /><ns0:path d="M136 136 Q155 124 174 136 M226 136 Q245 124 264 136" fill="none" stroke="#1d353b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5" /><ns0:ellipse cx="200" cy="200" rx="9" ry="12" fill="#fca1b7" stroke="#1d353b" stroke-width="4.5" /></ns0:g><ns0:g class="expr f-expr" data-e="satisfied" style="display:none"><ns0:path d="M136 170 Q155 188 174 170 M226 170 Q245 188 264 170" fill="none" stroke="#1d353b" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.5" /><ns0:path d="M180 192 Q200 214 220 192" fill="none" stroke="#1d353b" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" /><ns0:ellipse cx="134" cy="194" rx="15" ry="7" fill="#fca1b7" opacity="0.9" /><ns0:ellipse cx="266" cy="194" rx="15" ry="7" fill="#fca1b7" opacity="0.9" /></ns0:g><ns0:g class="expr f-expr" data-e="content" style="display:none"><ns0:circle cx="155" cy="168" r="13" fill="#1d353b" /><ns0:circle cx="245" cy="168" r="13" fill="#1d353b" /><ns0:path d="M138 150 H172 V168 H138Z M228 150 H262 V168 H228Z" fill="#fff" /><ns0:path d="M140 168 H170 M230 168 H260" fill="none" stroke="#1d353b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5" /><ns0:path d="M186 192 Q200 204 214 192" fill="none" stroke="#1d353b" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5" /><ns0:ellipse cx="134" cy="194" rx="10" ry="7" fill="#fca1b7" opacity="0.6" /><ns0:ellipse cx="266" cy="194" rx="10" ry="7" fill="#fca1b7" opacity="0.6" /></ns0:g>
+    </ns0:g>
+  </ns0:g></ns0:g>
+
+  
+  </svg>

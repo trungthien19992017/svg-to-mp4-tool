@@ -1,0 +1,57 @@
+{
+  "episode": "Chạm một chút thôi",
+  "duration": 30,
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "scene-001",
+      "start": 0,
+      "duration": 5,
+      "description": "Cùng nhìn mưa"
+    },
+    {
+      "id": "scene-002",
+      "start": 5,
+      "duration": 6,
+      "description": "Chút do dự"
+    },
+    {
+      "id": "scene-003",
+      "start": 11,
+      "duration": 6,
+      "description": "Hiểu lòng nhau"
+    },
+    {
+      "id": "scene-004",
+      "start": 17,
+      "duration": 7,
+      "description": "Chạm một chút thôi"
+    },
+    {
+      "id": "scene-005",
+      "start": 24,
+      "duration": 6,
+      "description": "Bên nhau"
+    }
+  ],
+  "contact": {
+    "scene04_start": 21.1,
+    "female_hand_source": [
+      245,
+      305
+    ],
+    "male_hand_source": [
+      135,
+      305
+    ],
+    "female_arm_translation": [
+      29,
+      -2
+    ],
+    "male_arm_translation": [
+      -29,
+      -2
+    ],
+    "note": "Hands first touch at ~28.5 units (measured in the real timeline); 29 gives a snug outline overlap. Characters at x=110/380, y=870."
+  }
+}

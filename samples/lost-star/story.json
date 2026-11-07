@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0",
+  "projectId": "may-and-the-lost-star",
+  "title": "Mèo Mây và ngôi sao lạc",
+  "description": "Một câu chuyện 4 cảnh về tình bạn, cùng nhân vật SVG xuyên suốt.",
+  "seed": 42,
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "format": "mp4"
+  },
+  "render": {
+    "crf": 18,
+    "preset": "veryfast"
+  },
+  "assets": [
+    {
+      "id": "cat-art",
+      "path": "assets/characters/may.svg",
+      "type": "character"
+    },
+    {
+      "id": "forest",
+      "path": "assets/backgrounds/forest.svg",
+      "type": "background"
+    },
+    {
+      "id": "star",
+      "path": "assets/objects/star.svg",
+      "type": "object"
+    },
+    {
+      "id": "chime",
+      "path": "audio/sfx/chime.wav",
+      "type": "audio"
+    }
+  ],
+  "characters": [
+    {
+      "id": "may",
+      "assetId": "cat-art",
+      "parts": [
+        "head",
+        "body",
+        "left-arm",
+        "right-arm",
+        "left-leg",
+        "right-leg",
+        "eyes",
+        "mouth",
+        "tail"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-001",
+      "name": "Ngôi sao rơi",
+      "duration": 9,
+      "source": "scenes/scene-001.js",
+      "characters": [
+        "may"
+      ],
+      "background": "forest",
+      "transition": {
+        "type": "fade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "scene-002",
+      "name": "Theo ánh sáng",
+      "duration": 9,
+      "source": "scenes/scene-002.js",
+      "characters": [
+        "may"
+      ],
+      "background": "forest",
+      "transition": {
+        "type": "slide",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "scene-003",
+      "name": "Cất cánh",
+      "duration": 9,
+      "source": "scenes/scene-003.js",
+      "characters": [
+        "may"
+      ],
+      "background": "forest",
+      "transition": {
+        "type": "fade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "scene-004",
+      "name": "Lời chào",
+      "duration": 9,
+      "source": "scenes/scene-004.js",
+      "characters": [
+        "may"
+      ],
+      "background": "forest",
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    }
+  ],
+  "audio": [
+    {
+      "id": "discovery",
+      "assetId": "chime",
+      "sceneId": "scene-002",
+      "start": 2,
+      "offset": 0,
+      "duration": 3,
+      "volume": 0.35,
+      "fadeIn": 0.1,
+      "fadeOut": 1
+    },
+    {
+      "id": "return",
+      "assetId": "chime",
+      "sceneId": "scene-004",
+      "start": 1,
+      "offset": 0,
+      "duration": 3,
+      "volume": 0.25,
+      "fadeIn": 0.1,
+      "fadeOut": 1
+    }
+  ],
+  "duration": 34.5
+}

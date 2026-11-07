@@ -1,0 +1,14 @@
+**/bin/
+**/obj/
+engine/.packages/
+engine/.venv/
+engine/__pycache__/
+**/__pycache__/
+work/
+data/
+.nuget/
+.dotnet/
+TestResults/
+*.user
+node_modules/
+

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920"><defs><radialGradient id="lg"><stop stop-color="#ffcb7a" stop-opacity=".6"/><stop offset="1" stop-color="#ffcb7a" stop-opacity="0"/></radialGradient>
+<radialGradient id="vg" cx=".5" cy=".5" r=".75"><stop offset=".6" stop-color="#0b1620" stop-opacity="0"/><stop offset="1" stop-color="#0b1620" stop-opacity=".38"/></radialGradient></defs>
+<ellipse id="lampGlow" cx="835" cy="1130" rx="520" ry="560" fill="url(#lg)" opacity=".3"/><rect id="tint" width="1080" height="1920" fill="#ff9f4a" opacity="0"/>
+<g id="steam"></g><g id="bokeh"></g><rect width="1080" height="1920" fill="url(#vg)"/></svg>
