@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 390"><ns0:g xmlns:ns0="http://www.w3.org/2000/svg" id="mascot-male"><ns0:g id="m-root">
+    
+    <ns0:g id="m-leg-l"><ns0:rect x="145" y="310" width="30" height="40" rx="10" fill="#eae5dc" stroke="#2c363f" stroke-width="4" stroke-linejoin="round" />
+    <ns0:ellipse cx="160" cy="360" rx="25" ry="10" fill="#d2a094" stroke="#2c363f" stroke-width="4" /></ns0:g>
+    <ns0:g id="m-leg-r"><ns0:rect x="225" y="310" width="30" height="40" rx="10" fill="#eae5dc" stroke="#2c363f" stroke-width="4" stroke-linejoin="round" />
+    <ns0:ellipse cx="240" cy="360" rx="25" ry="10" fill="#d2a094" stroke="#2c363f" stroke-width="4" /></ns0:g>
+
+    
+    <ns0:path d="M 145 240 Q 140 310 200 310 Q 260 310 255 240 Z" fill="#eae5dc" stroke="#2c363f" stroke-width="4.5" stroke-linejoin="round" />
+    <ns0:circle cx="200" cy="275" r="15" fill="#52a5b5" stroke="#2c363f" stroke-width="3" />
+
+    
+    <ns0:g id="m-arm-right"><ns0:path d="M 265 245 C 290 245 290 285 270 295 C 260 300 250 280 255 260" fill="#eae5dc" stroke="#2c363f" stroke-width="4" stroke-linejoin="round" />
+    <ns0:circle cx="265" cy="305" r="10" fill="#d2a094" stroke="#2c363f" stroke-width="3.5" /></ns0:g>
+
+    
+    <ns0:g id="m-arm-left">
+      <ns0:path d="M 135 245 C 110 245 110 285 130 295 C 140 300 150 280 145 260" fill="#eae5dc" stroke="#2c363f" stroke-width="4" stroke-linejoin="round" />
+      <ns0:circle cx="135" cy="305" r="10" fill="#d2a094" stroke="#2c363f" stroke-width="3.5" />
+    </ns0:g>
+
+    
+    <ns0:g id="m-head">
+      <ns0:path d="M 120 170 C 115 100 160 85 200 85 C 240 85 285 100 280 170 C 275 230 240 250 200 250 C 160 250 125 230 120 170 Z" fill="#eae5dc" stroke="#2c363f" stroke-width="4.5" stroke-linejoin="round" />
+      <ns0:path d="M 135 130 L 265 130 C 280 130 285 150 285 180 C 285 210 270 230 240 230 L 160 230 C 130 230 115 210 115 180 C 115 150 120 130 135 130 Z" fill="#2c363f" stroke="#2c363f" stroke-width="4.5" />
+      <ns0:g class="expr m-expr" data-e="default"><ns0:g id="m-eyes"><ns0:circle cx="160" cy="180" r="22" fill="#52a5b5" stroke="#2c363f" stroke-width="4" />
+      <ns0:circle cx="160" cy="180" r="14" fill="#111827" />
+      <ns0:circle cx="240" cy="180" r="22" fill="#52a5b5" stroke="#2c363f" stroke-width="4" />
+      <ns0:circle cx="240" cy="180" r="14" fill="#111827" /></ns0:g></ns0:g><ns0:g class="expr m-expr" data-e="happy" style="display:none"><ns0:path d="M138 190 Q160 160 182 190 M218 190 Q240 160 262 190" fill="none" stroke="#9fe3ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" /><ns0:path d="M182 206 Q200 230 218 206Z" fill="#52a5b5" /></ns0:g><ns0:g class="expr m-expr" data-e="sad" style="display:none"><ns0:circle cx="160" cy="186" r="18" fill="#52a5b5" stroke="#2c363f" stroke-width="4" /><ns0:circle cx="160" cy="186" r="11" fill="#111827" /><ns0:circle cx="240" cy="186" r="18" fill="#52a5b5" stroke="#2c363f" stroke-width="4" /><ns0:circle cx="240" cy="186" r="11" fill="#111827" /><ns0:path d="M138 168 L178 156 M222 156 L262 168" fill="none" stroke="#9fe3ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.5" /><ns0:path d="M184 216 Q200 204 216 216" fill="none" stroke="#9fe3ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" /><ns0:path class="tear" d="M176 196 Q168 208 176 214 Q184 208 176 196Z" fill="#8fd8f0" /></ns0:g><ns0:g class="expr m-expr" data-e="surprised" style="display:none"><ns0:circle cx="160" cy="182" r="27" fill="#52a5b5" stroke="#2c363f" stroke-width="4" /><ns0:circle cx="160" cy="182" r="6" fill="#111827" /><ns0:circle cx="240" cy="182" r="27" fill="#52a5b5" stroke="#2c363f" stroke-width="4" /><ns0:circle cx="240" cy="182" r="6" fill="#111827" /><ns0:path d="M136 146 Q160 134 184 146 M216 146 Q240 134 264 146" fill="none" stroke="#9fe3ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.5" /><ns0:ellipse cx="200" cy="216" rx="7" ry="9" fill="#111827" stroke="#52a5b5" stroke-width="4.5" /></ns0:g><ns0:g class="expr m-expr" data-e="satisfied" style="display:none"><ns0:path d="M138 182 Q160 202 182 182 M218 182 Q240 202 262 182" fill="none" stroke="#9fe3ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" /><ns0:path d="M182 210 Q200 228 218 210" fill="none" stroke="#9fe3ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.5" /><ns0:ellipse cx="132" cy="206" rx="11" ry="6" fill="#fca1b7" opacity="0.85" /><ns0:ellipse cx="268" cy="206" rx="11" ry="6" fill="#fca1b7" opacity="0.85" /></ns0:g><ns0:g class="expr m-expr" data-e="content" style="display:none"><ns0:circle cx="160" cy="182" r="20" fill="#52a5b5" stroke="#2c363f" stroke-width="4" /><ns0:circle cx="160" cy="182" r="13" fill="#111827" /><ns0:circle cx="240" cy="182" r="20" fill="#52a5b5" stroke="#2c363f" stroke-width="4" /><ns0:circle cx="240" cy="182" r="13" fill="#111827" /><ns0:path d="M136 160 H184 V182 H136Z M216 160 H264 V182 H216Z" fill="#2c363f" /><ns0:path d="M138 182 H182 M218 182 H262" fill="none" stroke="#9fe3ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" /><ns0:path d="M188 208 Q200 218 212 208" fill="none" stroke="#9fe3ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" /><ns0:ellipse cx="132" cy="206" rx="11" ry="6" fill="#fca1b7" opacity="0.6" /><ns0:ellipse cx="268" cy="206" rx="11" ry="6" fill="#fca1b7" opacity="0.6" /></ns0:g>
+    </ns0:g>
+  </ns0:g></ns0:g>
+
+  </svg>

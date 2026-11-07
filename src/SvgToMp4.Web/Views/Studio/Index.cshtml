@@ -1,0 +1,81 @@
+@{ Layout = null; }
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nét Studio · SVG thành video</title>
+    <link rel="stylesheet" href="/css/studio.css" />
+    <script src="/js/studio.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="/" aria-label="Nét Studio, trang chính"><span class="brand-mark">n<span>é</span>t</span><span>STUDIO</span></a>
+        <span class="header-divider"></span><p>Từ nét vẽ đến câu chuyện.</p>
+        <span class="local-badge"><i></i> Chạy trên máy của bạn</span>
+    </header>
+    <main>
+        <section class="intro">
+            <div><p class="eyebrow">SVG → MP4 / WHITEBOARD VIDEO</p><h1>Cho bản vẽ một chút chuyển động<span>.</span></h1><p>Vẽ từng nét, hiện từng màu. Biến SVG của bạn thành video có bàn tay vẽ.</p></div>
+            <button id="newProject" class="button secondary">＋ Bản vẽ mới</button>
+        </section>
+        <div id="message" class="message" role="status" aria-live="polite" hidden></div>
+        <section class="workspace" aria-label="Không gian biên tập">
+            <section class="panel source-panel">
+                <div class="panel-heading"><h2><span class="step">01</span> Bản vẽ</h2><span class="tag">SVG</span></div>
+                <div class="source-body">
+                    <label for="projectName" class="field-label">Tên bản vẽ</label>
+                    <input id="projectName" type="text" maxlength="80" value="Ngôi nhà nhỏ" autocomplete="off" />
+                    <label id="dropZone" class="drop-zone" for="fileInput"><span class="upload-symbol">↥</span><strong>Thả SVG vào đây</strong><span>hoặc bấm để chọn file · tối đa 20 MB</span></label>
+                    <input id="fileInput" type="file" accept=".svg,image/svg+xml" hidden />
+                    <div class="editor-heading source-actions"><button id="chooseBackground" class="text-button">＋ Chọn ảnh nền PNG/JPEG</button><button id="loadDoodleSample" class="text-button">Mẫu doodle</button><button id="downloadSvg" class="text-button">Tải SVG</button></div>
+                    <input id="backgroundInput" type="file" accept="image/png,image/jpeg" hidden />
+                    <div class="editor-heading"><label class="field-label" for="svgSource">Mã SVG</label><button id="loadSample" class="text-button">Dùng bản mẫu</button></div>
+                    <textarea id="svgSource" spellcheck="false" aria-describedby="sourceHint"></textarea>
+                    <div class="editor-footer"><span id="sourceSize">0 KB</span><span>UTF-8</span></div>
+                    <p id="sourceHint" class="hint">Doodle: ảnh nền nhúng PNG/JPEG, nét riêng trong group id="doodles" ở cuối SVG, fill="none". Ảnh đã có doodle sẽ giữ nguyên các nét đó; chọn nền chưa có doodle để vẽ mới.</p>
+                </div>
+            </section>
+            <section class="panel preview-panel">
+                <div class="panel-heading"><h2><span class="step">02</span> Khung xem</h2><div class="segmented"><button id="showOriginal" class="active">SVG gốc</button><button id="showVideo">Video</button></div></div>
+                <div class="stage-surround">
+                    <div id="stage" class="stage portrait">
+                        <img id="originalImage" alt="Bản SVG gốc trên nền trắng" />
+                        <video id="video" controls playsinline preload="metadata" hidden aria-label="Video render"></video>
+                        <div id="renderOverlay" class="render-overlay" hidden><div class="spinner"></div><strong id="overlayStage">Đang chuẩn bị</strong><span id="overlayDetail">Bạn có thể tiếp tục chỉnh sửa bản vẽ.</span></div>
+                        <div id="videoEmpty" class="video-empty" hidden><span>▷</span><strong>Video sẽ xuất hiện ở đây</strong><p>Bấm “Tạo bản xem trước” để bắt đầu.</p></div>
+                    </div>
+                </div>
+                <div class="preview-meta"><span id="previewLabel">Bản gốc · chưa render</span><span id="ratioLabel">9:16</span></div>
+                <div class="preview-notice"><span class="notice-dot"></span><p id="previewHint">Bản xem trước dùng cùng engine, ở 540p / 15 FPS. Bản xuất là 1080p / 30 FPS.</p></div>
+            </section>
+            <section class="panel settings-panel">
+                <div class="panel-heading"><h2><span class="step">03</span> Thiết lập</h2><span class="tag">MP4</span></div>
+                <div class="settings-body">
+                    <label for="effect" class="field-label">Cách vẽ</label>
+                    <select id="effect"><option value="whiteboard">Nét trước, màu sau</option><option value="doodle">Doodle trên ảnh nền</option></select>
+                    <div id="modeNotice" class="mode-notice" role="status" hidden><p id="modeNoticeText"></p><button id="useWhiteboard" class="text-button" hidden>Dùng Nét trước, màu sau</button></div>
+                    <fieldset><legend>Khung hình</legend><div class="aspect-options"><label><input type="radio" name="aspect" value="portrait" checked /><span><i class="aspect-icon vertical"></i><strong>Dọc</strong><small>9:16 · Shorts / Reels</small></span></label><label><input type="radio" name="aspect" value="landscape" /><span><i class="aspect-icon horizontal"></i><strong>Ngang</strong><small>16:9 · YouTube</small></span></label></div></fieldset>
+                    <div class="field-row"><label for="duration">Thời lượng video <small>3–120 giây</small></label><div class="number-field"><input id="duration" type="number" min="3" max="120" step="1" value="10" /><span>giây</span></div></div>
+                    <div class="field-row"><label for="hold">Giữ hình cuối <small>Đã tính trong tổng thời lượng</small></label><div class="number-field"><input id="hold" type="number" min="0.5" max="118.5" step="0.5" value="1" /><span>giây</span></div></div>
+                    <div class="rule"></div>
+                    <label for="hand" class="field-label">Bàn tay vẽ</label>
+                    <select id="hand"><option value="asian">Tay cầm bút · mẫu 1</option><option value="black">Tay cầm bút · mẫu 2</option><option value="children">Tay cầm bút · mẫu 3</option><option value="white">Tay cầm bút · mẫu 4</option><option value="none">Không hiện bàn tay</option></select>
+                    <label class="range-label" for="handScale">Kích thước bàn tay <output id="scaleValue">65%</output></label>
+                    <input id="handScale" type="range" min="0.2" max="1.5" step="0.05" value="0.65" />
+                    <div class="recipe"><span>✦</span><div><strong id="recipeTitle">Nét trước, màu sau</strong><p id="recipeDescription">Vẽ đường nét → hiện dần màu gốc → giữ hình hoàn chỉnh.</p></div></div>
+                    <div class="export-spec"><span>Định dạng xuất</span><strong>MP4 · H.264</strong><span id="exportSize">1080 × 1920 · 30 FPS</span></div>
+                    <button id="previewButton" class="button secondary full">▷ Tạo bản xem trước</button>
+                    <button id="exportButton" class="button primary full">Xuất MP4 <span>↗</span></button>
+                    <p class="shortcut">Ctrl + Enter để tạo bản xem trước</p>
+                </div>
+            </section>
+        </section>
+        <section class="history-section">
+            <div class="history-title"><div><h2>Những lần render <span id="jobCount">0</span></h2><p>Được lưu trên máy, kể cả khi bạn tải lại trang.</p></div><span class="queue-note">Mỗi lần xử lý một video</span></div>
+            <div id="jobs" class="job-list" aria-live="polite"><div class="empty-history">Chưa có video nào. Bắt đầu với bản vẽ đầu tiên của bạn.</div></div>
+        </section>
+        <footer><span>NÉT STUDIO</span><p>SVG của bạn. Màu sắc của bạn. Một cách kể chuyện mới.</p><span>Local workspace / v1</span></footer>
+    </main>
+</body>
+</html>

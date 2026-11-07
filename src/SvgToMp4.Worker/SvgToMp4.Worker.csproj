@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="../SvgToMp4.Core/SvgToMp4.Core.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {buildTimeline,locate,audioState,seeded} from '../src/SvgToMp4.Web/wwwroot/story/timeline.mjs';
+const manifest=JSON.parse(readFileSync(new URL('../samples/lost-star/story.json',import.meta.url)));
+const timeline=buildTimeline(manifest);
+assert.equal(timeline.duration,34.5);
+assert.deepEqual(timeline.scenes.map(s=>s.start),[0,8.5,17,25.5]);
+assert.deepEqual(locate(timeline,8.75).map(s=>s.scene.id),['scene-001','scene-002']);
+assert.deepEqual(locate(timeline,25).map(s=>s.scene.id),['scene-003']);
+assert.deepEqual(locate(timeline,34.5).map(s=>s.scene.id),['scene-004']);
+const first=locate(timeline,5);for(const t of [1,8,0])locate(timeline,t);assert.deepEqual(locate(timeline,5),first);
+const track=manifest.audio[0];assert.equal(audioState(track,timeline,10).active,false);assert.equal(audioState(track,timeline,11.5).position,1);assert.equal(audioState(track,timeline,11.5).start,10.5);
+const a=seeded(42),b=seeded(42);for(let i=0;i<30;i++)assert.equal(a(),b());
+assert.throws(()=>buildTimeline({scenes:[{id:'x',duration:1,transition:{type:'fade',duration:1}}]}));
+console.log('PASS timeline: scene boundaries, overlaps, final frame, nonsequential seek, audio offsets, seeded randomness.');

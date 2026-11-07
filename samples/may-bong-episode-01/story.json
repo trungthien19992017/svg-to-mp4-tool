@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0",
+  "projectId": "may-bong-episode-01",
+  "title": "Mây & Bông · Hiên nhà ngày mưa",
+  "description": "Ba khoảnh khắc nhỏ bên hiên rừng: đọc sách, chia hơi ấm và nghỉ ngơi. Original vector artwork inspired by the supplied rainy forest reference.",
+  "seed": 811,
+  "video": {
+    "width": 720,
+    "height": 1280,
+    "fps": 24,
+    "format": "mp4"
+  },
+  "render": {
+    "width": 720,
+    "height": 1280,
+    "fps": 24,
+    "crf": 18,
+    "preset": "veryfast"
+  },
+  "assets": [
+    {
+      "id": "cabin",
+      "path": "assets/backgrounds/rainy-cabin.svg",
+      "type": "background"
+    },
+    {
+      "id": "may-art",
+      "path": "assets/characters/may.svg",
+      "type": "character"
+    },
+    {
+      "id": "bong-art",
+      "path": "assets/characters/bong.svg",
+      "type": "character"
+    },
+    {
+      "id": "book",
+      "path": "assets/objects/book.svg",
+      "type": "object"
+    },
+    {
+      "id": "cup",
+      "path": "assets/objects/cup.svg",
+      "type": "object"
+    },
+    {
+      "id": "doodles",
+      "path": "assets/objects/doodles.svg",
+      "type": "object"
+    },
+    {
+      "id": "rain",
+      "path": "audio/rain.wav",
+      "type": "audio"
+    }
+  ],
+  "characters": [
+    {
+      "id": "may",
+      "assetId": "may-art",
+      "parts": [
+        "body",
+        "head",
+        "eyes",
+        "tail",
+        "arm",
+        "paws"
+      ]
+    },
+    {
+      "id": "bong",
+      "assetId": "bong-art",
+      "parts": [
+        "body",
+        "head",
+        "eyes",
+        "tail",
+        "arm",
+        "paws"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-001",
+      "name": "Một hiên nhà, hai người bạn",
+      "duration": 5,
+      "source": "scenes/scene-001.js",
+      "characters": [
+        "may",
+        "bong"
+      ],
+      "background": "cabin",
+      "transition": {
+        "type": "fade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "scene-002",
+      "name": "Một tách trà ấm",
+      "duration": 5,
+      "source": "scenes/scene-002.js",
+      "characters": [
+        "may",
+        "bong"
+      ],
+      "background": "cabin",
+      "transition": {
+        "type": "fade",
+        "duration": 0.5
+      }
+    },
+    {
+      "id": "scene-003",
+      "name": "Bình yên ở ngay đây",
+      "duration": 5,
+      "source": "scenes/scene-003.js",
+      "characters": [
+        "may",
+        "bong"
+      ],
+      "background": "cabin",
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    }
+  ],
+  "audio": [
+    {
+      "id": "rain-bed",
+      "assetId": "rain",
+      "start": 0,
+      "offset": 0,
+      "duration": 14,
+      "volume": 0.6,
+      "fadeIn": 0.4,
+      "fadeOut": 0.7
+    }
+  ]
+}

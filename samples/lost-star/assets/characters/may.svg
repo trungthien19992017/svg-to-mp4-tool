@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220">
+<g id="body"><ellipse cx="100" cy="150" rx="52" ry="55" fill="#e9b886"/><ellipse cx="100" cy="165" rx="28" ry="35" fill="#fff0cf"/></g>
+<g id="left-leg"><ellipse cx="70" cy="203" rx="20" ry="12" fill="#e9b886"/></g><g id="right-leg"><ellipse cx="130" cy="203" rx="20" ry="12" fill="#e9b886"/></g>
+<g id="left-arm"><ellipse cx="48" cy="150" rx="12" ry="33" fill="#dd9c70"/></g><g id="right-arm"><ellipse cx="152" cy="150" rx="12" ry="33" fill="#dd9c70"/></g>
+<g id="head"><path d="M44 70 L40 10 L82 40 Q100 30 119 40 L160 10 L157 73" fill="#e9b886"/><path d="M50 47 L48 24 L70 43 M132 43 L152 24 L150 47" fill="#e39b9b"/>
+<ellipse cx="100" cy="79" rx="61" ry="51" fill="#f4cd99"/><g id="eyes" fill="#342d43"><ellipse cx="77" cy="75" rx="5" ry="8"/><ellipse cx="123" cy="75" rx="5" ry="8"/></g>
+<g id="mouth"><path d="M94 88 L106 88 L100 95 Z" fill="#b36c74"/><path d="M100 95 Q91 108 84 98 M100 95 Q109 108 116 98" fill="none" stroke="#704c55" stroke-width="3" stroke-linecap="round"/></g>
+<path d="M54 91 L19 84 M54 99 L19 103 M146 91 L181 84 M146 99 L181 103" stroke="#ad7c63" stroke-width="2"/></g>
+<path id="tail" d="M149 174 Q212 154 172 120" fill="none" stroke="#e9b886" stroke-width="19" stroke-linecap="round"/>
+</svg>
