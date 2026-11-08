@@ -1,0 +1,125 @@
+{
+  "schema": "rain-config-v1",
+  "phase": "02D",
+  "status": "visual-preview-only",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "masterBackground": "master-background.png",
+  "seed": 20261108,
+  "windowMask": {
+    "status": "provisional",
+    "coordinateSystem": "1080x1920",
+    "panes": [
+      "M 111 64 L 326 74 L 326 386 L 64 372 Z",
+      "M 349 76 L 545 88 L 545 397 L 349 388 Z",
+      "M 62 402 L 326 416 L 326 801 L 61 801 Z",
+      "M 349 418 L 545 428 L 545 800 L 349 800 Z"
+    ],
+    "note": "Approximate pane interiors traced against approved raster; adjust mask against rebuilt window-frame SVG before production."
+  },
+  "direction": {
+    "vector": [
+      -0.11,
+      1
+    ],
+    "description": "mostly vertical, slight left drift"
+  },
+  "density": "light-to-moderate",
+  "groups": [
+    {
+      "id": "far",
+      "count": 65,
+      "lengthPx": [
+        9,
+        18
+      ],
+      "opacityRange": [
+        0.11,
+        0.22
+      ],
+      "speedPxPerSecond": [
+        22,
+        36
+      ],
+      "loopDurationSeconds": 12,
+      "layerDepth": 0,
+      "motion": "vertical translation with seamless wrap, phase offset by seed"
+    },
+    {
+      "id": "mid",
+      "count": 48,
+      "lengthPx": [
+        16,
+        31
+      ],
+      "opacityRange": [
+        0.18,
+        0.33
+      ],
+      "speedPxPerSecond": [
+        32,
+        55
+      ],
+      "loopDurationSeconds": 12,
+      "layerDepth": 1,
+      "motion": "vertical translation with seamless wrap, phase offset by seed"
+    },
+    {
+      "id": "near",
+      "count": 24,
+      "lengthPx": [
+        27,
+        49
+      ],
+      "opacityRange": [
+        0.25,
+        0.43
+      ],
+      "speedPxPerSecond": [
+        45,
+        72
+      ],
+      "loopDurationSeconds": 12,
+      "layerDepth": 2,
+      "motion": "vertical translation with seamless wrap, phase offset by seed"
+    }
+  ],
+  "glass": {
+    "count": 48,
+    "opacityRange": [
+      0.15,
+      0.38
+    ],
+    "movement": "static droplets; optional slow deterministic drips",
+    "layerDepth": 3
+  },
+  "reflections": {
+    "opacityRange": [
+      0.075,
+      0.08
+    ],
+    "movement": "static or subtle periodic opacity modulation",
+    "layerDepth": 4
+  },
+  "protection": {
+    "characterInteractionRect": [
+      275,
+      820,
+      820,
+      1500
+    ],
+    "handContactPoint": [
+      535,
+      1110
+    ],
+    "rule": "All overlays clipped to window, behind characters; no rain drawn over room interaction zone."
+  },
+  "preview": {
+    "type": "CSS animation demo only",
+    "determinism": "seeded geometry; fixed-period CSS animation; no Math.random or Date.now",
+    "officialMotionLibrary": false
+  },
+  "fpsReference": 24
+}
