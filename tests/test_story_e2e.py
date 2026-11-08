@@ -34,11 +34,12 @@ with sync_playwright() as pw:
         scene_frame=until(lambda:page.frame(url=re.compile('.*5189/story/runtime.html.*')))
         until(lambda:scene_frame.evaluate('!!window.storyRenderer'))
         image_a=None
-        for t in [5,1,8,0,5]:
-            scene_frame.evaluate('async t=>window.storyRenderer.readyFrame(t)',t)
-            image=scene_frame.locator('body').screenshot()
-            if image_a is None:image_a=image
-        assert image==image_a,'Nonsequential seek changes the same frame'
+        for _ in range(3):
+            for t in [5,1,8,0,5]:
+                scene_frame.evaluate('async t=>window.storyRenderer.readyFrame(t)',t)
+                image=scene_frame.locator('body').screenshot()
+                if image_a is None:image_a=image
+            assert image==image_a,'Nonsequential seek changes the same frame'
         assert scene_frame.evaluate('window.storyRenderer.timeline.duration')==34.5
         assert len(scene_frame.evaluate('window.storyRenderer.seek(8.75).scenes'))==2
         assert scene_frame.evaluate("(()=>{try{return !!parent.document.body}catch{return false}})()") is False

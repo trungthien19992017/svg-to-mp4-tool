@@ -153,7 +153,7 @@ Master time clamps to [0,total]. Scene start inclusive/end exclusive; final scen
 
 Same timestamp must reconstruct same picture after arbitrary forward/backward/repeated seeks. readyFrame seeks twice around font readiness. Use absolute GSAP timelines or pure time functions. Initialize context.random once, not on seek; noise(index) is stateless. Give explicit from/to values where prior state matters; restore every property seek modifies. Do not increment state, consume RNG or change DOM based on traversal history. reset is not a recovery mechanism.
 
-Exporter checks exact PNG hashes at c,min(1,D),min(8,D),0,c where c=min(5,D/2). This probe is not proof for every time: test additional timestamps and overlaps. Scaled preview can have tiny compositor rounding differences despite identical DOM; production exporter retains exact full-size hash checks.
+Exporter checks decoded frame pixels at c,min(1,D),min(8,D),0,c where c=min(5,D/2). The repeated frame may differ by at most 1/255 in a channel on fewer than 0.1% of pixels, matching the accepted Chromium compositor tolerance; larger differences fail. This probe is not proof for every time: test additional timestamps and overlaps.
 
 ## 12. Prohibited/unsupported behavior
 

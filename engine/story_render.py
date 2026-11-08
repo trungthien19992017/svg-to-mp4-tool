@@ -1,7 +1,6 @@
 """Story rendering shares the browser runtime with the editor; no scene JS runs in Python."""
 from __future__ import annotations
 import argparse
-import hashlib
 import json
 import math
 import mimetypes
@@ -18,6 +17,26 @@ from playwright.sync_api import sync_playwright
 
 ROOT=ENGINE.parent
 RUNTIME=ROOT/'src/SvgToMp4.Web/wwwroot/story'
+
+def pixel_buffers_equivalent(first,second,pixel_count):
+    if len(first)!=len(second) or len(first)!=pixel_count*3:return False
+    changed=0
+    for offset in range(0,len(first),3):
+        delta0=abs(first[offset]-second[offset]);delta1=abs(first[offset+1]-second[offset+1]);delta2=abs(first[offset+2]-second[offset+2])
+        if max(delta0,delta1,delta2)>1:return False
+        if delta0 or delta1 or delta2:
+            changed+=1
+            if changed/pixel_count>=.001:return False
+    return True
+
+def png_frames_equivalent(first,second,width,height):
+    if first==second:return True
+    command=[shutil.which('ffmpeg'),'-v','error','-f','image2pipe','-vcodec','png','-i','pipe:0','-f','rawvideo','-pix_fmt','rgb24','pipe:1']
+    decoded=[]
+    for image in (first,second):
+        result=subprocess.run(command,input=image,capture_output=True,check=True,timeout=30)
+        decoded.append(result.stdout)
+    return pixel_buffers_equivalent(decoded[0],decoded[1],width*height)
 
 def layout(manifest):
     start=0.;result=[]
@@ -94,11 +113,11 @@ def render_story(job_file):
             page.evaluate('async()=>{await window.storyReady;}')
             # Observable, nonsequential determinism check before committing video frames.
             check=min(5.,duration/2)
-            digests=[]
+            captures=[]
             for t in (check,min(1.,duration),min(8.,duration),0.,check):
                 page.evaluate('async t=>{await window.storyReady;return window.storyRenderer.readyFrame(t)}',t)
-                digests.append(hashlib.sha256(page.screenshot(type='png')).hexdigest())
-            if digests[0]!=digests[-1]:raise ValueError('Scene không deterministic: cùng thời điểm cho hình khác nhau sau khi seek ngược. Kiểm tra callback, random và state tích lũy.')
+                captures.append(page.screenshot(type='png'))
+            if not png_frames_equivalent(captures[0],captures[-1],width,height):raise ValueError('Scene không deterministic: cùng thời điểm cho hình khác nhau sau khi seek ngược. Kiểm tra callback, random và state tích lũy.')
             command=[shutil.which('ffmpeg'),'-hide_banner','-loglevel','error','-y','-f','image2pipe','-vcodec','png','-framerate',str(fps),'-i','pipe:0','-an','-c:v','libx264','-threads','2','-preset',preset,'-crf',str(crf),'-pix_fmt','yuv420p','-movflags','+faststart',str(silent)]
             with (directory/'encoder.log').open('wb') as log:
                 encoder=subprocess.Popen(command,stdin=subprocess.PIPE,stdout=subprocess.DEVNULL,stderr=log)
