@@ -1,5 +1,7 @@
 # AI SVG Storyboard Studio — Story to Video
 
+**Episode Generator tích hợp:** mở `/episodes` để nhập Production Kit, chọn mẫu/tạo cảnh bằng form hoặc nhập JSON kịch bản, rồi đưa thẳng vào Studio. Hỗ trợ bản nháp, nhân bản tập cũ và khóa version/hash asset. Xem [hướng dẫn Production Kit](docs/production-generator.md). Sau khi cập nhật source, khởi động lại bằng `start.ps1` khi các job đang chạy đã hoàn tất.
+
 Trọng tâm mới: import một Story Project ZIP chứa SVG, scene JavaScript/GSAP, HTML/CSS và audio; quản lý nhiều cảnh, preview theo timeline và xuất MP4. Backend vẫn là ASP.NET Core MVC; preview/export dùng chung browser runtime và Python + Playwright + FFmpeg. Whiteboard/doodle được giữ ở **/whiteboard**, cùng lịch sử và dữ liệu cũ.
 
 **Tình trạng bản cập nhật:** source đã được triển khai, build và các kiểm tra core/timeline/audio được ghi trong [báo cáo Story](docs/story-verification.md). Preview GSAP và MP4 toàn bộ Story **chưa được xác minh chạy thành công trong môi trường này** vì npm bị chặn mạng và bước khởi động lại/kiểm thử browser bị lỗi xét duyệt do hạn mức. Không coi bản này đã nghiệm thu MVP cho đến khi chạy các kiểm tra end-to-end.

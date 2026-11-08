@@ -10,6 +10,7 @@ builder.Services.AddSingleton(new AppPaths(root));
 builder.Services.AddDataProtection().PersistKeysToFileSystem(new DirectoryInfo(Path.Combine(root, "data", "keys")));
 builder.Services.AddSingleton<JobStore>();
 builder.Services.AddSingleton<StoryStore>();
+builder.Services.AddSingleton<ProductionKitStore>();
 builder.Services.AddSingleton<RenderWorker>();
 builder.Services.AddHostedService(s => s.GetRequiredService<RenderWorker>());
 builder.Services.AddControllersWithViews();

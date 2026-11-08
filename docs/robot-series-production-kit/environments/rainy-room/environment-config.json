@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0",
+  "environmentId": "rainy-room",
+  "source": "Phase 08 approved Episode 01 environment assets",
+  "layers": [
+    {
+      "path": "background-far.svg",
+      "assetId": "background-far"
+    },
+    {
+      "path": "floor.svg",
+      "assetId": "floor"
+    },
+    {
+      "path": "foreground.svg",
+      "assetId": "foreground"
+    },
+    {
+      "path": "furniture.svg",
+      "assetId": "furniture"
+    },
+    {
+      "path": "lighting.svg",
+      "assetId": "lighting"
+    },
+    {
+      "path": "rain-back.svg",
+      "assetId": "rain-back"
+    },
+    {
+      "path": "rain-glass.svg",
+      "assetId": "rain-glass"
+    },
+    {
+      "path": "walls.svg",
+      "assetId": "walls"
+    },
+    {
+      "path": "window-reflections.svg",
+      "assetId": "window-reflections"
+    }
+  ],
+  "note": "Layer listing only; no invented render ordering or runtime API."
+}

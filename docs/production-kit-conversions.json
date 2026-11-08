@@ -1,0 +1,12 @@
+[
+  {
+    "sourceSha256": "c9b3639dfb920b1fa6dc22107ff33e67df5889092aaf62b537adc2d5a1ca932e",
+    "kitPath": "outputs/robot-series-front-test-v0.1.0/robot-series-front-test-v0.1.0.zip",
+    "status": "Experimental - no status promotion"
+  },
+  {
+    "sourceSha256": "ac4d9c3678c7dc08d0b03239930f1c91d62f0291f492f78a5174632fac774ba1",
+    "kitPath": "outputs/robot-series-front-fixed-v0.1.1/robot-series-front-v0.1.1.zip",
+    "status": "Experimental - repaired front profile, no status promotion"
+  }
+]

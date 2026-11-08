@@ -132,5 +132,5 @@ addEventListener('keydown',event=>{
     if(event.code==='Space'){event.preventDefault();play();}
     if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();const step=event.key==='ArrowLeft'?-1:1;if(event.altKey)run(()=>chooseScene(selected+step))();else{pause();seek(playhead+step/Number($('fps').value));}}
 });
-try{token=(await api('/api/session')).token;await listProjects();await pollJobs();}catch(error){status(error.message,true);}
+try{token=(await api('/api/session')).token;await listProjects();const requested=new URLSearchParams(location.search).get('project');if(requested)await loadProject(await api('/api/stories/'+encodeURIComponent(requested)));await pollJobs();}catch(error){status(error.message,true);}
 setInterval(()=>pollJobs().catch(()=>{}),2000);

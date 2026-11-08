@@ -108,9 +108,11 @@ export class StoryRenderer {
     seek(time){
         this.time=Math.min(this.timeline.duration,Math.max(0,Number(time)||0));
         const active=locate(this.timeline,this.time);
-        for(const item of this.instances){item.root.style.visibility='hidden';item.root.style.opacity='1';item.root.style.transform='none';}
+        // SVG descendants may explicitly set visibility:visible, overriding a hidden ancestor.
+        // Remove inactive scenes from layout/painting so their expression layers cannot leak.
+        for(const item of this.instances){item.root.style.display='none';item.root.style.visibility='hidden';item.root.style.opacity='1';item.root.style.transform='none';}
         for(const {scene,local} of active){
-            const item=this.instances.find(i=>i.scene.id===scene.id);item.root.style.visibility='visible';
+            const item=this.instances.find(i=>i.scene.id===scene.id);item.root.style.display='block';item.root.style.visibility='visible';
             try{item.apply(local);}catch(error){throw Error(`${scene.id} @ ${local.toFixed(3)}s: ${textError(error)}`);}
         }
         if(active.length===2){

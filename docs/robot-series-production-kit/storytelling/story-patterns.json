@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "patterns": [
+    {
+      "id": "quiet-meeting",
+      "theme": "small affectionate encounter",
+      "requiredActions": [
+        "motion.lookAt",
+        "motion.reach",
+        "motion.touch"
+      ],
+      "status": "TemplateOnlyNotGeneratorReady",
+      "notes": "Blocked until referenced motions are Supported"
+    },
+    {
+      "id": "silent-reaction",
+      "theme": "nonverbal emotional beat",
+      "requiredActions": [
+        "motion.surprisedReaction",
+        "motion.happyReaction"
+      ],
+      "status": "TemplateOnlyNotGeneratorReady"
+    }
+  ]
+}

@@ -1,0 +1,3230 @@
+{
+  "version": "robot-front-trial-v1",
+  "rigs": [
+    {
+      "revision": "pair-calibrated-v2",
+      "id": "robot-men-front",
+      "sex": "men",
+      "view": "front",
+      "canvas": [
+        465,
+        760
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              232,
+              485
+            ]
+          },
+          "visible": true,
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            232,
+            485
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              0,
+              -103
+            ],
+            "shoulder-L": [
+              -80,
+              -72
+            ],
+            "hip-L": [
+              -69,
+              83
+            ],
+            "shoulder-R": [
+              80,
+              -72
+            ],
+            "hip-R": [
+              69,
+              83
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            0,
+            -103
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              -1.0,
+              -363.5
+            ],
+            "face": [
+              0,
+              -175
+            ],
+            "side-L": [
+              -204.5,
+              -174.5
+            ],
+            "side-R": [
+              202.5,
+              -174.5
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head",
+          "anchorMetadata": {
+            "side-L": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                -1,
+                0
+              ]
+            },
+            "side-R": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                1,
+                0
+              ]
+            },
+            "face": {
+              "purpose": "Gaze/face center only; not a surface contact point"
+            },
+            "top": {
+              "accuracyPx": 1,
+              "source": "Rendered head top including approved antenna"
+            }
+          },
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            -80,
+            -72
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              -27.04,
+              75.4
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L",
+          "nominalLength": 80.1019450450487,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            -27.04,
+            75.4
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              -24.96,
+              69.6
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow",
+          "nominalLength": 73.94025696466032,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            -24.96,
+            69.6
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              35
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            -69,
+            83
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              50
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee",
+          "nominalLength": 50.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            50
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              50.5
+            ],
+            "toe": [
+              62.5,
+              30
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            80,
+            -72
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              27.04,
+              75.4
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-R",
+          "nominalLength": 80.1019450450487,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            27.04,
+            75.4
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              24.96,
+              69.6
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow",
+          "nominalLength": 73.94025696466032,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            24.96,
+            69.6
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              35
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            69,
+            83
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-R",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              50
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee",
+          "nominalLength": 50.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            50
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              50.5
+            ],
+            "toe": [
+              62.5,
+              30
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "assets/robot-men-front.svg",
+      "sourceCrop": [
+        65,
+        65,
+        530,
+        875
+      ],
+      "headArtPreserved": true,
+      "calibrationReference": "references/calibration-neutral.png",
+      "nativeCanvas": [
+        465,
+        760
+      ],
+      "displayViewBox": [
+        -80,
+        -20,
+        625,
+        800
+      ]
+    },
+    {
+      "revision": "pair-calibrated-v2",
+      "id": "robot-men-three-quarter",
+      "sex": "men",
+      "view": "three-quarter",
+      "canvas": [
+        465,
+        760
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              232,
+              485
+            ]
+          },
+          "visible": true,
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            232,
+            485
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              0,
+              -103
+            ],
+            "shoulder-L": [
+              -75,
+              -72
+            ],
+            "hip-L": [
+              -50,
+              83
+            ],
+            "shoulder-R": [
+              82,
+              -72
+            ],
+            "hip-R": [
+              50,
+              83
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            0,
+            -103
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              -3.5,
+              -363.5
+            ],
+            "face": [
+              55,
+              -175
+            ],
+            "side-L": [
+              -204.5,
+              -174.5
+            ],
+            "side-R": [
+              197.5,
+              -174.5
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head",
+          "anchorMetadata": {
+            "side-L": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                -1,
+                0
+              ]
+            },
+            "side-R": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                1,
+                0
+              ]
+            },
+            "face": {
+              "purpose": "Gaze/face center only; not a surface contact point"
+            },
+            "top": {
+              "accuracyPx": 1,
+              "source": "Rendered head top including approved antenna"
+            }
+          },
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            -75,
+            -72
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              -27.04,
+              75.4
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L",
+          "nominalLength": 80.1019450450487,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            -27.04,
+            75.4
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              -24.96,
+              69.6
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow",
+          "nominalLength": 73.94025696466032,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            -24.96,
+            69.6
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              35
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            -50,
+            83
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              50
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee",
+          "nominalLength": 50.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            50
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              50.5
+            ],
+            "toe": [
+              62.5,
+              30
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            82,
+            -72
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              27.04,
+              75.4
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-R",
+          "nominalLength": 80.1019450450487,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            27.04,
+            75.4
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              24.96,
+              69.6
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow",
+          "nominalLength": 73.94025696466032,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            24.96,
+            69.6
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              35
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            50,
+            83
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-R",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              50
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee",
+          "nominalLength": 50.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            50
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              50.5
+            ],
+            "toe": [
+              62.5,
+              30
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "assets/robot-men-three-quarter.svg",
+      "sourceCrop": [
+        610,
+        65,
+        1075,
+        875
+      ],
+      "headArtPreserved": true,
+      "calibrationReference": "references/calibration-neutral.png",
+      "nativeCanvas": [
+        465,
+        760
+      ],
+      "displayViewBox": [
+        -80,
+        -20,
+        625,
+        800
+      ]
+    },
+    {
+      "revision": "pair-calibrated-v2",
+      "id": "robot-men-side",
+      "sex": "men",
+      "view": "side",
+      "canvas": [
+        465,
+        760
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              238,
+              485
+            ]
+          },
+          "visible": true,
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            238,
+            485
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              -8,
+              -103
+            ],
+            "shoulder-L": [
+              6,
+              -72
+            ],
+            "hip-L": [
+              0,
+              83
+            ],
+            "shoulder-R": [
+              -8,
+              -72
+            ],
+            "hip-R": [
+              7,
+              83
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            -8,
+            -103
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              1.5,
+              -363.5
+            ],
+            "face": [
+              110,
+              -175
+            ],
+            "side-L": [
+              -202.5,
+              -174.5
+            ],
+            "side-R": [
+              204.5,
+              -174.5
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head",
+          "anchorMetadata": {
+            "side-L": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                -1,
+                0
+              ]
+            },
+            "side-R": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                1,
+                0
+              ]
+            },
+            "face": {
+              "purpose": "Gaze/face center only; not a surface contact point"
+            },
+            "top": {
+              "accuracyPx": 1,
+              "source": "Rendered head top including approved antenna"
+            }
+          },
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            6,
+            -72
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              0.0,
+              75.4
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L",
+          "nominalLength": 75.4,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            0.0,
+            75.4
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              0.0,
+              69.6
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow",
+          "nominalLength": 69.6,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            0.0,
+            69.6
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              35
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            0,
+            83
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              50
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee",
+          "nominalLength": 50.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            50
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              50.5
+            ],
+            "toe": [
+              62.5,
+              30
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            -8,
+            -72
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              0.0,
+              74.36
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "shoulder-R",
+          "nominalLength": 74.36,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            0.0,
+            74.36
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              0.0,
+              68.64
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "elbow",
+          "nominalLength": 68.64,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            0.0,
+            68.64
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              35
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            7,
+            83
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "hip-R",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              50
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "knee",
+          "nominalLength": 50.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            50
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              50.5
+            ],
+            "toe": [
+              62.5,
+              30
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "assets/robot-men-side.svg",
+      "sourceCrop": [
+        1145,
+        65,
+        1610,
+        875
+      ],
+      "headArtPreserved": true,
+      "calibrationReference": "references/calibration-neutral.png",
+      "nativeCanvas": [
+        465,
+        760
+      ],
+      "displayViewBox": [
+        -80,
+        -20,
+        625,
+        800
+      ]
+    },
+    {
+      "revision": "pair-calibrated-v2",
+      "id": "robot-women-front",
+      "sex": "women",
+      "view": "front",
+      "canvas": [
+        455,
+        760
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              223,
+              521
+            ]
+          },
+          "visible": true,
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            223,
+            521
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              0,
+              -82
+            ],
+            "shoulder-L": [
+              -75,
+              -56
+            ],
+            "hip-L": [
+              -44,
+              73
+            ],
+            "shoulder-R": [
+              75,
+              -56
+            ],
+            "hip-R": [
+              44,
+              73
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            0,
+            -82
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              -2.0,
+              -420.5
+            ],
+            "face": [
+              0,
+              -175
+            ],
+            "side-L": [
+              -192.5,
+              -163.5
+            ],
+            "side-R": [
+              188.5,
+              -163.5
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head",
+          "anchorMetadata": {
+            "side-L": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                -1,
+                0
+              ]
+            },
+            "side-R": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                1,
+                0
+              ]
+            },
+            "face": {
+              "purpose": "Gaze/face center only; not a surface contact point"
+            },
+            "top": {
+              "accuracyPx": 1,
+              "source": "Rendered head top including approved antenna"
+            }
+          },
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            -75,
+            -56
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              -21.32,
+              54.6
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L",
+          "nominalLength": 58.61486500880131,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            -21.32,
+            54.6
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              -19.68,
+              50.4
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow",
+          "nominalLength": 54.10602923889351,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            -19.68,
+            50.4
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              32.5
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2",
+          "anchorMetadata": {
+            "contact": {
+              "source": "Exposed round forearm/hand cap outer stroke radius 28+4.5",
+              "normal": [
+                0,
+                1
+              ],
+              "accuracyPx": 0.5
+            }
+          }
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            -44,
+            73
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              40
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee",
+          "nominalLength": 40.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            40
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              28.5
+            ],
+            "toe": [
+              27.5,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            75,
+            -56
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              21.32,
+              54.6
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-R",
+          "nominalLength": 58.61486500880131,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            21.32,
+            54.6
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              19.68,
+              50.4
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow",
+          "nominalLength": 54.10602923889351,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            19.68,
+            50.4
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              32.5
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2",
+          "anchorMetadata": {
+            "contact": {
+              "source": "Exposed round forearm/hand cap outer stroke radius 28+4.5",
+              "normal": [
+                0,
+                1
+              ],
+              "accuracyPx": 0.5
+            }
+          }
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            44,
+            73
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-R",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              40
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee",
+          "nominalLength": 40.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            40
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              28.5
+            ],
+            "toe": [
+              27.5,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "assets/robot-women-front.svg",
+      "sourceCrop": [
+        270,
+        5,
+        725,
+        675
+      ],
+      "headArtPreserved": true,
+      "calibrationReference": "references/calibration-neutral.png",
+      "nativeCanvas": [
+        455,
+        760
+      ],
+      "displayViewBox": [
+        -80,
+        -20,
+        615,
+        800
+      ]
+    },
+    {
+      "revision": "pair-calibrated-v2",
+      "id": "robot-women-three-quarter",
+      "sex": "women",
+      "view": "three-quarter",
+      "canvas": [
+        455,
+        760
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              223,
+              521
+            ]
+          },
+          "visible": true,
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            223,
+            521
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              0,
+              -82
+            ],
+            "shoulder-L": [
+              -72,
+              -56
+            ],
+            "hip-L": [
+              -37,
+              73
+            ],
+            "shoulder-R": [
+              67,
+              -56
+            ],
+            "hip-R": [
+              39,
+              73
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            0,
+            -82
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              -0.5,
+              -420.5
+            ],
+            "face": [
+              55,
+              -175
+            ],
+            "side-L": [
+              -190.5,
+              -163.5
+            ],
+            "side-R": [
+              188.5,
+              -163.5
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head",
+          "anchorMetadata": {
+            "side-L": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                -1,
+                0
+              ]
+            },
+            "side-R": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                1,
+                0
+              ]
+            },
+            "face": {
+              "purpose": "Gaze/face center only; not a surface contact point"
+            },
+            "top": {
+              "accuracyPx": 1,
+              "source": "Rendered head top including approved antenna"
+            }
+          },
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            -72,
+            -56
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              -21.32,
+              54.6
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L",
+          "nominalLength": 58.61486500880131,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            -21.32,
+            54.6
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              -19.68,
+              50.4
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow",
+          "nominalLength": 54.10602923889351,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            -19.68,
+            50.4
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              32.5
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2",
+          "anchorMetadata": {
+            "contact": {
+              "source": "Exposed round forearm/hand cap outer stroke radius 28+4.5",
+              "normal": [
+                0,
+                1
+              ],
+              "accuracyPx": 0.5
+            }
+          }
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            -37,
+            73
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              40
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee",
+          "nominalLength": 40.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            40
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              28.5
+            ],
+            "toe": [
+              27.5,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            67,
+            -56
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              21.32,
+              54.6
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-R",
+          "nominalLength": 58.61486500880131,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            21.32,
+            54.6
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              19.68,
+              50.4
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow",
+          "nominalLength": 54.10602923889351,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            19.68,
+            50.4
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              32.5
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2",
+          "anchorMetadata": {
+            "contact": {
+              "source": "Exposed round forearm/hand cap outer stroke radius 28+4.5",
+              "normal": [
+                0,
+                1
+              ],
+              "accuracyPx": 0.5
+            }
+          }
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            39,
+            73
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-R",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              40
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee",
+          "nominalLength": 40.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            40
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              28.5
+            ],
+            "toe": [
+              27.5,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "assets/robot-women-three-quarter.svg",
+      "sourceCrop": [
+        795,
+        5,
+        1250,
+        675
+      ],
+      "headArtPreserved": true,
+      "calibrationReference": "references/calibration-neutral.png",
+      "nativeCanvas": [
+        455,
+        760
+      ],
+      "displayViewBox": [
+        -80,
+        -20,
+        615,
+        800
+      ]
+    },
+    {
+      "revision": "pair-calibrated-v2",
+      "id": "robot-women-side",
+      "sex": "women",
+      "view": "side",
+      "canvas": [
+        455,
+        760
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              223,
+              521
+            ]
+          },
+          "visible": true,
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            223,
+            521
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              0,
+              -82
+            ],
+            "shoulder-L": [
+              8,
+              -56
+            ],
+            "hip-L": [
+              0,
+              73
+            ],
+            "shoulder-R": [
+              -36,
+              -56
+            ],
+            "hip-R": [
+              6,
+              73
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            0,
+            -82
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              8.5,
+              -420.5
+            ],
+            "face": [
+              110,
+              -175
+            ],
+            "side-L": [
+              -176.5,
+              -163.5
+            ],
+            "side-R": [
+              193.5,
+              -163.5
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head",
+          "anchorMetadata": {
+            "side-L": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                -1,
+                0
+              ]
+            },
+            "side-R": {
+              "source": "Rendered preserved head silhouette at horizontal center row",
+              "accuracyPx": 1,
+              "normal": [
+                1,
+                0
+              ]
+            },
+            "face": {
+              "purpose": "Gaze/face center only; not a surface contact point"
+            },
+            "top": {
+              "accuracyPx": 1,
+              "source": "Rendered head top including approved antenna"
+            }
+          },
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            8,
+            -56
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              0.0,
+              54.6
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L",
+          "nominalLength": 54.6,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            0.0,
+            54.6
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              0.0,
+              50.4
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow",
+          "nominalLength": 50.4,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            0.0,
+            50.4
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              32.5
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2",
+          "anchorMetadata": {
+            "contact": {
+              "source": "Exposed round forearm/hand cap outer stroke radius 28+4.5",
+              "normal": [
+                0,
+                1
+              ],
+              "accuracyPx": 0.5
+            }
+          }
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            0,
+            73
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              40
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee",
+          "nominalLength": 40.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            40
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              28.5
+            ],
+            "toe": [
+              27.5,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            -36,
+            -56
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              0.0,
+              53.56
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "shoulder-R",
+          "nominalLength": 53.56,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            0.0,
+            53.56
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              0.0,
+              49.44
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "elbow",
+          "nominalLength": 49.44,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            0.0,
+            49.44
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              32.5
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "wrist",
+          "revision": "pair-calibrated-v2",
+          "anchorMetadata": {
+            "contact": {
+              "source": "Exposed round forearm/hand cap outer stroke radius 28+4.5",
+              "normal": [
+                0,
+                1
+              ],
+              "accuracyPx": 0.5
+            }
+          }
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            6,
+            73
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              48
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "hip-R",
+          "nominalLength": 48.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            48
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              40
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "knee",
+          "nominalLength": 40.0,
+          "lengthPolicy": "Authored rest length for revision v2; never scaled during playback.",
+          "revision": "pair-calibrated-v2"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            40
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              28.5
+            ],
+            "toe": [
+              27.5,
+              0
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "ankle",
+          "revision": "pair-calibrated-v2"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "assets/robot-women-side.svg",
+      "sourceCrop": [
+        1315,
+        5,
+        1770,
+        675
+      ],
+      "headArtPreserved": true,
+      "calibrationReference": "references/calibration-neutral.png",
+      "nativeCanvas": [
+        455,
+        760
+      ],
+      "displayViewBox": [
+        -80,
+        -20,
+        615,
+        800
+      ]
+    }
+  ],
+  "calibrationPolicy": "Reference-derived body proportions with unchanged per-view head art. Separate constant whole-character scales; no animated limb scale.",
+  "instanceIdPolicy": "Prefix all IDs and fragment references before mounting; query data-part and data-source-id within active view.",
+  "leftFemaleView": {
+    "source": "robot-women-three-quarter",
+    "matrix": [
+      -1,
+      0,
+      0,
+      1,
+      446,
+      0
+    ],
+    "heart": "Mirrored with artwork, approved by user",
+    "rotationHandedness": -1
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0",
+  "licensePolicy": "Only original procedurally synthesized files are distributed in this ZIP. No third-party recordings or samples used. Original generation is not a third-party CC0 certificate.",
+  "generatedAssets": [
+    {
+      "assetId": "rain",
+      "path": "audio/ambience/soft-rain.wav",
+      "source": "Original procedural synthesis by this project on 2026-11-08; generator/generate_sound_pack.py",
+      "thirdPartySamplesUsed": false,
+      "license": "ORIGINAL_PROJECT_GENERATED",
+      "licenseUrl": null,
+      "redistributionInStoryZip": true,
+      "rightsNote": "No externally licensed samples. Created as an original deliverable for the user; not represented as CC0/public-domain certified.",
+      "sha256": "c703ff55e3783393af298f45cb0e58edb719843b4f9901b3ba23d8995679631a"
+    },
+    {
+      "assetId": "piano",
+      "path": "audio/music/soft-piano.wav",
+      "source": "Original procedural synthesis by this project on 2026-11-08; generator/generate_sound_pack.py",
+      "thirdPartySamplesUsed": false,
+      "license": "ORIGINAL_PROJECT_GENERATED",
+      "licenseUrl": null,
+      "redistributionInStoryZip": true,
+      "rightsNote": "No externally licensed samples. Created as an original deliverable for the user; not represented as CC0/public-domain certified.",
+      "sha256": "23e5aebc819be57afa7d2c6f4c659733392113a2189026207e43fe78ff54d6b7"
+    },
+    {
+      "assetId": "cloth",
+      "path": "audio/sfx/soft-arm-movement.wav",
+      "source": "Original procedural synthesis by this project on 2026-11-08; generator/generate_sound_pack.py",
+      "thirdPartySamplesUsed": false,
+      "license": "ORIGINAL_PROJECT_GENERATED",
+      "licenseUrl": null,
+      "redistributionInStoryZip": true,
+      "rightsNote": "No externally licensed samples. Created as an original deliverable for the user; not represented as CC0/public-domain certified.",
+      "sha256": "b54908fd08041c0ad2cf0e0968a95fb4b9039414f944af040eb9242a947afe76"
+    },
+    {
+      "assetId": "contact",
+      "path": "audio/sfx/soft-touch.wav",
+      "source": "Original procedural synthesis by this project on 2026-11-08; generator/generate_sound_pack.py",
+      "thirdPartySamplesUsed": false,
+      "license": "ORIGINAL_PROJECT_GENERATED",
+      "licenseUrl": null,
+      "redistributionInStoryZip": true,
+      "rightsNote": "No externally licensed samples. Created as an original deliverable for the user; not represented as CC0/public-domain certified.",
+      "sha256": "f16ff7d3161b3b3e1d2a7192ad3520c82ef01c532ba7f932c773493d98519aba"
+    },
+    {
+      "assetId": "surprise",
+      "path": "audio/sfx/surprised-soft.wav",
+      "source": "Original procedural synthesis by this project on 2026-11-08; generator/generate_sound_pack.py",
+      "thirdPartySamplesUsed": false,
+      "license": "ORIGINAL_PROJECT_GENERATED",
+      "licenseUrl": null,
+      "redistributionInStoryZip": true,
+      "rightsNote": "No externally licensed samples. Created as an original deliverable for the user; not represented as CC0/public-domain certified.",
+      "sha256": "92ea4ba9b23af50a13d71e2ea8553f5ea7593f744c1fa53b122a015d9aa690ef"
+    },
+    {
+      "assetId": "footstep",
+      "path": "audio/sfx/soft-footstep.wav",
+      "source": "Original procedural synthesis by this project on 2026-11-08; generator/generate_sound_pack.py",
+      "thirdPartySamplesUsed": false,
+      "license": "ORIGINAL_PROJECT_GENERATED",
+      "licenseUrl": null,
+      "redistributionInStoryZip": true,
+      "rightsNote": "No externally licensed samples. Created as an original deliverable for the user; not represented as CC0/public-domain certified.",
+      "sha256": "bd061b1c13f2363312a82422f17c6623e237f06c025266f707b171c2bf86f0c1"
+    },
+    {
+      "assetId": "mix",
+      "path": "audio/mix/story-mix-30s.wav",
+      "source": "Original procedural synthesis by this project on 2026-11-08; generator/generate_sound_pack.py",
+      "thirdPartySamplesUsed": false,
+      "license": "ORIGINAL_PROJECT_GENERATED",
+      "licenseUrl": null,
+      "redistributionInStoryZip": true,
+      "rightsNote": "No externally licensed samples. Created as an original deliverable for the user; not represented as CC0/public-domain certified.",
+      "sha256": "0c1a2ae01e7d4d9b9f12d8e04c8b591cff30f4172a527f38e344ae4604fa320d"
+    }
+  ],
+  "distributionNote": "Review original-project rights before redistribution. Episode mix is included in golden ZIP; original sound pack preserved unchanged.",
+  "source": "references/audio-license.json"
+}

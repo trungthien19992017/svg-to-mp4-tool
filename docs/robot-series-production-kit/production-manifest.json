@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "production-1",
+  "kitId": "robot-series-front",
+  "title": "Robot thật · front",
+  "version": "0.1.0",
+  "rigVersion": "robot-front-trial-v1",
+  "testOnly": true,
+  "sourceKitSha256": "c9b3639dfb920b1fa6dc22107ff33e67df5889092aaf62b537adc2d5a1ca932e",
+  "rig": "characters/character-rig.json",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 24,
+    "format": "mp4"
+  },
+  "defaultTemplate": "front-trial-three-scenes",
+  "catalogs": {
+    "characters": "characters/character-catalog.json",
+    "poses": "characters/pose-catalog.json",
+    "expressions": "characters/expression-catalog.json",
+    "motions": "motions/motion-catalog.json",
+    "environments": "environments/environment-catalog.json",
+    "audio": "audio/audio-catalog.json",
+    "templates": "storytelling/scene-templates.json"
+  }
+}

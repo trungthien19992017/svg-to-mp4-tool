@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0",
+  "templates": [
+    {
+      "id": "rainy-room-two-shot",
+      "environment": "rainy-room",
+      "characters": [
+        "robot-male",
+        "robot-female"
+      ],
+      "camera": "use approved episode framing; do not infer new shots",
+      "actions": [],
+      "status": "CompositionReferenceOnly"
+    },
+    {
+      "id": "hand-contact-closeup",
+      "environment": "rainy-room",
+      "characters": [
+        "robot-male",
+        "robot-female"
+      ],
+      "actions": [
+        "motion.reach",
+        "motion.touch",
+        "motion.release"
+      ],
+      "status": "BlockedUntilSupported",
+      "contactGate": "Visual confirmation at 22s,24s,27.2s and boundary frames"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "kitImport": "PASS",
+  "episodeCreationFromKit": "PASS",
+  "svgBytesPreserved": {
+    "male": true,
+    "female": true
+  },
+  "projectUrl": "http://127.0.0.1:5188/?project=b508c3422b914aeead44c63917efc80b",
+  "kitUrl": "http://127.0.0.1:5188/episodes?kit=robot-series-front%400.1.1",
+  "visualRenderQA": "Not run; experimental Partial retained"
+}

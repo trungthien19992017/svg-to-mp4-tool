@@ -1,0 +1,12 @@
+{
+  "sourceArchiveSha256": "c9b3639dfb920b1fa6dc22107ff33e67df5889092aaf62b537adc2d5a1ca932e",
+  "originalRobotSvgBytesPreserved": {
+    "male": true,
+    "female": true
+  },
+  "build": "PASS - 0 warnings/errors",
+  "kitValidationAndEpisodeCompilation": "PASS",
+  "studioImport": "PASS",
+  "browserVisualAndRender": "NOT RUN - user acceptance",
+  "capabilityStatus": "Partial; explicit testOnly kit and allowExperimental episode; no production promotion"
+}

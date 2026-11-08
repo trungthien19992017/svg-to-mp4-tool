@@ -1,0 +1,1 @@
+BẢN THỬ, chưa nghiệm thu production. Import episode.zip vào Story Studio để xem ngay; nhập Kit ZIP sau khi cập nhật/restart ứng dụng. Artwork robot giữ nguyên bytes; môi trường mưa tĩnh; motion mới để kiểm tra khớp; không tự nâng status Partial.

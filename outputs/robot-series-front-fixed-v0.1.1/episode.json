@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "episode-1",
+  "kitId": "robot-series-front",
+  "kitVersion": "0.1.1",
+  "allowExperimental": true,
+  "id": "robot-front-trial-01",
+  "title": "Robot thật · Kiểm tra front 18 giây",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 24,
+    "format": "mp4"
+  },
+  "scenes": [
+    {
+      "id": "scene-001",
+      "name": "Artwork gốc · đứng nghỉ",
+      "duration": 6,
+      "environment": "rainy-room",
+      "audio": "rain",
+      "volume": 0.18,
+      "caption": "BẢN THỬ · Artwork gốc · đứng nghỉ",
+      "actors": [
+        {
+          "id": "male",
+          "character": "robot-male",
+          "pose": "idle-front",
+          "expression": "default",
+          "motion": "",
+          "x": 30,
+          "y": 760,
+          "scale": 1
+        },
+        {
+          "id": "female",
+          "character": "robot-female",
+          "pose": "idle-front",
+          "expression": "default",
+          "motion": "",
+          "x": 535,
+          "y": 760,
+          "scale": 1
+        }
+      ],
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "scene-002",
+      "name": "Biểu cảm · nghiêng đầu nhẹ",
+      "duration": 6,
+      "environment": "rainy-room",
+      "audio": "rain",
+      "volume": 0.18,
+      "caption": "BẢN THỬ · Biểu cảm · nghiêng đầu nhẹ",
+      "actors": [
+        {
+          "id": "male",
+          "character": "robot-male",
+          "pose": "idle-front",
+          "expression": "pleased",
+          "motion": "head-gentle",
+          "x": 30,
+          "y": 760,
+          "scale": 1
+        },
+        {
+          "id": "female",
+          "character": "robot-female",
+          "pose": "idle-front",
+          "expression": "pleased",
+          "motion": "head-gentle",
+          "x": 535,
+          "y": 760,
+          "scale": 1
+        }
+      ],
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "scene-003",
+      "name": "Kiểm tra khớp tay",
+      "duration": 6,
+      "environment": "rainy-room",
+      "audio": "rain",
+      "volume": 0.18,
+      "caption": "BẢN THỬ · Kiểm tra khớp tay",
+      "actors": [
+        {
+          "id": "male",
+          "character": "robot-male",
+          "pose": "idle-front",
+          "expression": "cheerful",
+          "motion": "arm-review",
+          "x": 30,
+          "y": 760,
+          "scale": 1
+        },
+        {
+          "id": "female",
+          "character": "robot-female",
+          "pose": "idle-front",
+          "expression": "cheerful",
+          "motion": "arm-review",
+          "x": 535,
+          "y": 760,
+          "scale": 1
+        }
+      ],
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    }
+  ]
+}

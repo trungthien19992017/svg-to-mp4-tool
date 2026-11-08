@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "episode-1",
+  "kitId": "robot-series-example",
+  "kitVersion": "1.0.0",
+  "id": "robot-episode-01",
+  "title": "Một lời chào nhỏ",
+  "video": {
+    "width": 720,
+    "height": 1280,
+    "fps": 24,
+    "format": "mp4"
+  },
+  "scenes": [
+    {
+      "id": "scene-001",
+      "name": "Một lời chào",
+      "duration": 4,
+      "caption": "Một ngày mới, một lời chào.",
+      "environment": "room",
+      "actors": [
+        {
+          "id": "hero",
+          "character": "male",
+          "pose": "idle",
+          "expression": "happy",
+          "motion": "nod",
+          "x": 0,
+          "y": 0,
+          "scale": 1
+        }
+      ],
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "scene-002",
+      "name": "Đón niềm vui",
+      "duration": 4,
+      "caption": "Mở lòng với những điều nhỏ bé.",
+      "environment": "room",
+      "actors": [
+        {
+          "id": "hero",
+          "character": "female",
+          "pose": "arms-open",
+          "expression": "happy",
+          "motion": "nod-open",
+          "x": 0,
+          "y": 0,
+          "scale": 1
+        }
+      ],
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "scene-003",
+      "name": "Hẹn gặp lại",
+      "duration": 4,
+      "caption": "Hẹn bạn ở tập tiếp theo!",
+      "environment": "room",
+      "actors": [
+        {
+          "id": "hero",
+          "character": "male",
+          "pose": "idle",
+          "expression": "happy",
+          "motion": "wave",
+          "x": 0,
+          "y": 0,
+          "scale": 1
+        }
+      ],
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    }
+  ]
+}

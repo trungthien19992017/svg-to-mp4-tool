@@ -1,0 +1,344 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:svg-story-project:1.0",
+  "title": "SVG Story Project Format v1 — production manifest",
+  "description": "Source-derived authoring schema. Additional properties are preserved by the importer but do not imply runtime support. Archive, cross-field and code checks are required separately; see animation-code-contract.md. Defaults are annotations, not mutations. Prefer omitted optional values over null.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "projectId",
+    "title",
+    "video",
+    "scenes"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "projectId": {
+      "$ref": "#/$defs/id"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "pattern": "\\S"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descriptive metadata; no animation behavior."
+    },
+    "seed": {
+      "type": "number",
+      "description": "Numeric initialization seed; use a positive integer for portable authoring. Runtime uses (seed || 1), adds sceneIndex * 1009 for random(), and coerces PRNG state to uint32. StoryValidation does not independently validate this field."
+    },
+    "duration": {
+      "type": "number",
+      "minimum": 0.25,
+      "maximum": 1800,
+      "readOnly": true,
+      "description": "Derived and overwritten on save: sum(scene.duration - outgoing overlap). May be omitted in authored input."
+    },
+    "video": {
+      "$ref": "#/$defs/video"
+    },
+    "render": {
+      "$ref": "#/$defs/render"
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/scene"
+      },
+      "minItems": 1,
+      "maxItems": 80
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/character"
+      }
+    },
+    "audio": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/audio"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "pattern": "^[A-Za-z0-9_-]{1,80}$"
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": "^(?!/)(?!.*//)(?!.*(?:^|/)\\.{1,2}(?:/|$))(?!.*[. ](?:/|$))[^\\\\:%?#\\u0000-\\u001f]+\\.(?:[jJ][sS][oO][nN]|[jJ][sS]|[sS][vV][gG]|[hH][tT][mM][lL]|[cC][sS][sS]|[pP][nN][gG]|[jJ][pP][gG]|[jJ][pP][eE][gG]|[wW][eE][bB][pP]|[wW][aA][vV]|[mM][pP]3|[mM]4[aA]|[oO][gG][gG]|[tT][tT][fF]|[wW][oO][fF][fF]2)$",
+      "description": "Bundle-relative POSIX path. Also enforce SafePath Unicode whitelist, reserved Windows basenames and allowed extensions; see animation-code-contract.md."
+    },
+    "dimension": {
+      "type": "integer",
+      "minimum": 64,
+      "maximum": 3840,
+      "multipleOf": 2
+    },
+    "video": {
+      "type": "object",
+      "required": [
+        "width",
+        "height",
+        "fps"
+      ],
+      "properties": {
+        "width": {
+          "$ref": "#/$defs/dimension"
+        },
+        "height": {
+          "$ref": "#/$defs/dimension"
+        },
+        "fps": {
+          "type": "integer",
+          "enum": [
+            24,
+            30,
+            60
+          ]
+        },
+        "format": {
+          "enum": [
+            "mp4",
+            null
+          ],
+          "default": "mp4"
+        }
+      }
+    },
+    "render": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "$ref": "#/$defs/dimension"
+        },
+        "height": {
+          "$ref": "#/$defs/dimension"
+        },
+        "fps": {
+          "type": "integer",
+          "enum": [
+            24,
+            30,
+            60
+          ]
+        },
+        "crf": {
+          "type": "number",
+          "minimum": 10,
+          "maximum": 35,
+          "default": 18,
+          "description": "Manifest validator accepts numbers; actual render API DTO requires an integer. Author integer values."
+        },
+        "preset": {
+          "type": "string",
+          "enum": [
+            "ultrafast",
+            "veryfast",
+            "medium"
+          ],
+          "default": "veryfast"
+        }
+      }
+    },
+    "asset": {
+      "type": "object",
+      "required": [
+        "id",
+        "path"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "path": {
+          "$ref": "#/$defs/path"
+        },
+        "type": {
+          "type": "string",
+          "description": "Metadata label, not an enforced enum or decoder selector."
+        },
+        "family": {
+          "type": "string",
+          "description": "FontFace family for .woff2/.ttf; defaults to asset ID."
+        }
+      }
+    },
+    "character": {
+      "type": "object",
+      "required": [
+        "id",
+        "assetId"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "assetId": {
+          "$ref": "#/$defs/id"
+        },
+        "parts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Advisory SVG part IDs; existence is not validated and no rig is created."
+        }
+      }
+    },
+    "scene": {
+      "type": "object",
+      "required": [
+        "id",
+        "duration",
+        "source"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 0.25,
+          "maximum": 600
+        },
+        "source": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/path"
+            },
+            {
+              "pattern": "\\.js$"
+            }
+          ],
+          "description": "Existing ES module file; lowercase .js extension is required by the scene validator."
+        },
+        "html": {
+          "$ref": "#/$defs/path"
+        },
+        "css": {
+          "$ref": "#/$defs/path"
+        },
+        "characters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "background": {
+          "$ref": "#/$defs/id"
+        },
+        "transition": {
+          "$ref": "#/$defs/transition"
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1800,
+          "readOnly": true,
+          "description": "Derived start, overwritten on save. Omit in authored input."
+        }
+      }
+    },
+    "transition": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "cut",
+            "fade",
+            "slide"
+          ],
+          "default": "cut"
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 600,
+          "description": "Ignored for cut (effective overlap = 0); fade/slide default .5. Bound by both adjacent scene durations; final overlap must be zero."
+        }
+      }
+    },
+    "audio": {
+      "type": "object",
+      "required": [
+        "assetId",
+        "duration"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Optional metadata, not uniqueness-validated by StoryValidation."
+        },
+        "name": {
+          "type": "string"
+        },
+        "assetId": {
+          "$ref": "#/$defs/id"
+        },
+        "sceneId": {
+          "$ref": "#/$defs/id"
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1800,
+          "default": 0
+        },
+        "offset": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1800,
+          "default": 0
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 1800
+        },
+        "volume": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 1
+        },
+        "fadeIn": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1800,
+          "default": 0,
+          "description": "Must also be <= this track duration."
+        },
+        "fadeOut": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1800,
+          "default": 0,
+          "description": "Must also be <= this track duration."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0",
+  "requiredInputs": [
+    "episode idea",
+    "kit version"
+  ],
+  "generatorPolicy": {
+    "allowedActionStatus": "Supported",
+    "unknownAction": "REJECT",
+    "missingPose": "REJECT",
+    "masterMutation": "REJECT",
+    "externalAssets": "REQUIRE_APPROVAL",
+    "sceneTransitions": "continuity validation required",
+    "audioLicense": "verify redistributability",
+    "runtime": "follow animation-code-contract.md",
+    "studioQA": "NOT TESTED unless run in actual Studio"
+  },
+  "workflow": [
+    "idea",
+    "supported-action filter",
+    "story outline",
+    "shot plan",
+    "asset dependency check",
+    "story assembly",
+    "QA"
+  ]
+}

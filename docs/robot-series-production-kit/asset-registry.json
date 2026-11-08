@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.1.0",
+  "hashAlgorithm": "SHA-256",
+  "immutability": "master SVG byte-preserved",
+  "assets": [
+    {
+      "path": "audio/ambience/soft-rain.wav",
+      "sha256": "c703ff55e3783393af298f45cb0e58edb719843b4f9901b3ba23d8995679631a",
+      "bytes": 5760044
+    },
+    {
+      "path": "audio/audio-catalog.json",
+      "sha256": "2c58bf8e80b90804e10106c7153b9ee65057b51f8c889f7901631351dd6add52",
+      "bytes": 4544
+    },
+    {
+      "path": "audio/music/soft-piano.wav",
+      "sha256": "23e5aebc819be57afa7d2c6f4c659733392113a2189026207e43fe78ff54d6b7",
+      "bytes": 5760044
+    },
+    {
+      "path": "audio/sfx/soft-arm-movement.wav",
+      "sha256": "b54908fd08041c0ad2cf0e0968a95fb4b9039414f944af040eb9242a947afe76",
+      "bytes": 115244
+    },
+    {
+      "path": "audio/sfx/soft-footstep.wav",
+      "sha256": "bd061b1c13f2363312a82422f17c6623e237f06c025266f707b171c2bf86f0c1",
+      "bytes": 53804
+    },
+    {
+      "path": "audio/sfx/soft-touch.wav",
+      "sha256": "f16ff7d3161b3b3e1d2a7192ad3520c82ef01c532ba7f932c773493d98519aba",
+      "bytes": 57644
+    },
+    {
+      "path": "audio/sfx/surprised-soft.wav",
+      "sha256": "92ea4ba9b23af50a13d71e2ea8553f5ea7593f744c1fa53b122a015d9aa690ef",
+      "bytes": 69164
+    },
+    {
+      "path": "characters/character-rig.json",
+      "sha256": "43d9e7122663d25a1f06743dd3259ad3faabff58cdcffbd8a3a6a13d83c90fae",
+      "bytes": 71367
+    },
+    {
+      "path": "characters/expression-catalog.json",
+      "sha256": "00d96824e48e371daf295de79ca3d8a45ff11231e72925816406b36f1decc551",
+      "bytes": 76999
+    },
+    {
+      "path": "characters/pose-catalog.json",
+      "sha256": "167bcee74d4dc6b7e9698f2499e86fe8630dce07d98d9aef7dd96f5cedd38898",
+      "bytes": 40300
+    },
+    {
+      "path": "characters/robot-female.svg",
+      "sha256": "26095fce479d56c7afccda7d48e54d693d6536dea0cde4b7bde3ace4eb3cd257",
+      "bytes": 181459
+    },
+    {
+      "path": "characters/robot-male.svg",
+      "sha256": "26d419ba4862e854e3b34b3c084bb543e7ae10538ead7e0176221bab08fc5612",
+      "bytes": 155595
+    },
+    {
+      "path": "contracts/animation-code-contract.md",
+      "sha256": "2ea350ed5669785d0346aeb82f2616112964dcc0beed18d049b28a6ced8a6f26",
+      "bytes": 20245
+    },
+    {
+      "path": "environments/rainy-room/background-far.svg",
+      "sha256": "60ca0fab21317420fbb4c3b94420d848eee42e7ac3607bb92c16c7ddb3a5d836",
+      "bytes": 831
+    },
+    {
+      "path": "environments/rainy-room/environment-config.json",
+      "sha256": "e5b337911beebf7db395e0b8db9e936b80d692abc91893d7322e4f1b436d193a",
+      "bytes": 890
+    },
+    {
+      "path": "environments/rainy-room/floor.svg",
+      "sha256": "ea56e0fbec1a29b5e34459fb4d33815dc3cab2228c7779409e8f3b31faad183b",
+      "bytes": 1029
+    },
+    {
+      "path": "environments/rainy-room/foreground.svg",
+      "sha256": "778e73c02571cd8a42b7ccf23545a3f4a3f57d21b8414d9bb7106fdc19ac62c6",
+      "bytes": 639
+    },
+    {
+      "path": "environments/rainy-room/furniture.svg",
+      "sha256": "0a7373ed0f7f65a7e303ae0eb9761a7a2e36b90d4fc320cf82bd3463db7e2ca1",
+      "bytes": 1815
+    },
+    {
+      "path": "environments/rainy-room/lighting.svg",
+      "sha256": "8987546567c3829d84dd3113df6199c144b444209b21153a3ecaacce6bf662e7",
+      "bytes": 444
+    },
+    {
+      "path": "environments/rainy-room/rain-back.svg",
+      "sha256": "fe5f2c31622087467910d8df7317b76a02444f421f9b88363498c5af24ea60f2",
+      "bytes": 23694
+    },
+    {
+      "path": "environments/rainy-room/rain-glass.svg",
+      "sha256": "303df34457d3e9c07c3e76c3053a10e4741b23248ce366d24ccf91f05281ad0c",
+      "bytes": 5223
+    },
+    {
+      "path": "environments/rainy-room/walls.svg",
+      "sha256": "1d2e77bebfe9badd74c1c753291479b66ccaa85d25b2c819b015ec07954ea045",
+      "bytes": 1020
+    },
+    {
+      "path": "environments/rainy-room/window-reflections.svg",
+      "sha256": "9f4561d28e76a2d8f0f72df23a39d4a403df23e6e80c7b972716faa4418cebf4",
+      "bytes": 535
+    },
+    {
+      "path": "gap-report.md",
+      "sha256": "949ff0ef73569794eebfd6ec7362599e759d99bad9fe23f388bd345155db1094",
+      "bytes": 456
+    },
+    {
+      "path": "library-validation-report.md",
+      "sha256": "ef6b467807962537bc7b5c5aa03e6acbedf4bc59d1363d942a2df9ddfbfade47",
+      "bytes": 1258
+    },
+    {
+      "path": "motions/interaction-catalog.json",
+      "sha256": "b51d81169ef28954dffcafe71d5fc4f0a19bd14331d7d406e4d8cdc9db5d5fd1",
+      "bytes": 59587
+    },
+    {
+      "path": "motions/motion-catalog.json",
+      "sha256": "941385191e24eb13be688731f62ff282b951ab6698a77f43a9d9b8fa0221e225",
+      "bytes": 7854
+    },
+    {
+      "path": "motions/motion-library.js",
+      "sha256": "351498c00ba412c432024920a34dbd8657fb4a302b73c425c03bfda59e3965a7",
+      "bytes": 9434
+    },
+    {
+      "path": "production-manifest.json",
+      "sha256": "9b53bfb8cd9892c32336dee0db1e8c5366d6576b8d0d53234a3c95770f7315ca",
+      "bytes": 974
+    },
+    {
+      "path": "samples/approved-episode-01.zip",
+      "sha256": "0400cf4b9cba75cfd68263565802d59450e0a39aa6159e3c8e18ae8f6676a817",
+      "bytes": 5351872
+    },
+    {
+      "path": "samples/episode-01-export.mp4",
+      "sha256": "9637b60139bf55c0798bcc424a7298315c92c52b8793652ebf565c91a05db539",
+      "bytes": 5536804
+    },
+    {
+      "path": "storytelling/character-personalities.json",
+      "sha256": "e22bd6337b965039e40f56db27dc2c80a0221066ce7f709ec1a1f8838802cf94",
+      "bytes": 679
+    },
+    {
+      "path": "storytelling/episode-rules.json",
+      "sha256": "6faa2562b88d94dd26097ea2c101c41cdfd9ca9a0c370faac45164032311f43e",
+      "bytes": 674
+    },
+    {
+      "path": "storytelling/scene-templates.json",
+      "sha256": "a8e75c3f84e17c15f25d0133e88d003fe7f0210ff74e0780c684634980cc9320",
+      "bytes": 726
+    },
+    {
+      "path": "storytelling/series-bible.md",
+      "sha256": "1d5bc0ae3466a3e6a51a25fe6eab1fd9b456cfc271492b1903fa882ca0d56c0b",
+      "bytes": 1214
+    },
+    {
+      "path": "storytelling/story-patterns.json",
+      "sha256": "8a5890939acd57175f560cfaf8ba12b69c74a4a6bec6749520be3930d43c1c33",
+      "bytes": 596
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "phase03-motion-catalog-v1",
+  "sourceCharacterPack": "character-pack-v4(2).zip",
+  "sourceContract": "animation-code-contract(5).md — Story Production & Animation Code Contract v1",
+  "statusPolicy": "Only visually and structurally QA-approved STATIC poses may be Supported. All dynamic actions remain Partial until user approves; Studio runtime not tested.",
+  "engineCompatibility": {
+    "target": "GSAP 3.15.0 via context.gsap and context.timeline()",
+    "lifecycle": "duration / synchronous seek / reset / dispose",
+    "preview": "Offline pure-clock harness, NOT Studio GSAP runtime"
+  },
+  "api": {
+    "imports": "import {createMotionComposer, createTimelineMotion} from '../modules/motion-library.js';",
+    "create": "const composer = createMotionComposer({duration:8, actors:{male:{x:225,y:238.45,scale:.7}}, gsap:context.gsap});",
+    "schedule": "composer.add('headTilt', 'male', 3.75, .55, {from:0, to:4, easing:'sine.inOut'});",
+    "finalize": "composer.finalize();",
+    "drive": "const controller = createTimelineMotion(context, composer, (states,t)=>actor.render(states.male));",
+    "sceneLifecycle": [
+      "controller.seek(t)",
+      "controller.reset()",
+      "controller.dispose()"
+    ],
+    "overlapPolicy": "Exclusive channels per actor. add() throws on time overlap for the same channel; adjacent actions may meet at exact boundary.",
+    "timePolicy": "GSAP paused absolute clock; pure state evaluation at each time. No callbacks, timers, autonomous tweens or cross-scene state.",
+    "contactPolicy": "For touch use pre-authored targetAngles and shared world transforms. Validate both contact anchors after transform; no IK/physics."
+  },
+  "actions": [
+    {
+      "id": "idle",
+      "defaultDuration": 1.2,
+      "easing": "sine.inOut",
+      "channels": [
+        "head-y"
+      ],
+      "startPose": "headY=0",
+      "endPose": "headY=0",
+      "description": "Neutral head bob, finite",
+      "status": "Partial",
+      "limitations": "No approved subtle idle keyframes; neutral in-plane prototype"
+    },
+    {
+      "id": "blink",
+      "defaultDuration": 0.24,
+      "easing": "sine.inOut",
+      "channels": [
+        "blink"
+      ],
+      "startPose": "blink=0",
+      "endPose": "blink=0",
+      "description": "Blink authored eye groups",
+      "status": "Partial",
+      "limitations": "Only front 12 expression states have independent eyelid groups"
+    },
+    {
+      "id": "breathe",
+      "defaultDuration": 2.8,
+      "easing": "sine.inOut",
+      "channels": [
+        "neck-y"
+      ],
+      "startPose": "neckY=0",
+      "endPose": "neckY=0",
+      "description": "Small head/neck motion; torso/arms remain rigid",
+      "status": "Partial",
+      "limitations": "No rib-cage deformation; not a body-scale animation"
+    },
+    {
+      "id": "lookAt",
+      "defaultDuration": 0.6,
+      "easing": "sine.inOut",
+      "channels": [
+        "head-rotation"
+      ],
+      "startPose": "headRotation=from",
+      "endPose": "headRotation=to",
+      "description": "Approximate attention with head tilt only",
+      "status": "Partial",
+      "limitations": "True eye gaze/yaw is unsupported; no invented three-quarter transition"
+    },
+    {
+      "id": "headTilt",
+      "defaultDuration": 0.55,
+      "easing": "sine.inOut",
+      "channels": [
+        "head-rotation"
+      ],
+      "startPose": "headRotation=from",
+      "endPose": "headRotation=to",
+      "description": "In-plane head tilt, joint limit ±15°",
+      "status": "Partial",
+      "limitations": "Not a yaw turn; 3/4 views require separate approved pose"
+    },
+    {
+      "id": "happyReaction",
+      "defaultDuration": 0.7,
+      "easing": "sine.inOut",
+      "channels": [
+        "expression",
+        "head-y"
+      ],
+      "startPose": "expression=previous, headY=fromY",
+      "endPose": "expression=pleased, headY=toY",
+      "description": "Use an authored front facial state and gentle head lift",
+      "status": "Partial",
+      "limitations": "Face switches by absolute time in seek; no callback; only front"
+    },
+    {
+      "id": "surprisedReaction",
+      "defaultDuration": 0.75,
+      "easing": "sine.inOut",
+      "channels": [
+        "expression",
+        "head-y"
+      ],
+      "startPose": "expression=previous, headY=fromY",
+      "endPose": "expression=surprised, headY=toY",
+      "description": "Use authored surprised face and lift head",
+      "status": "Partial",
+      "limitations": "Face switches by absolute time in seek; only front"
+    },
+    {
+      "id": "sadReaction",
+      "defaultDuration": 0.9,
+      "easing": "sine.inOut",
+      "channels": [
+        "expression",
+        "head-rotation"
+      ],
+      "startPose": "expression=previous, headRotation=from",
+      "endPose": "expression=sad, headRotation=to",
+      "description": "Use authored sad face and lower/tilt head",
+      "status": "Partial",
+      "limitations": "No procedural tears, only authored front sad expression"
+    },
+    {
+      "id": "reach",
+      "defaultDuration": 1.85,
+      "easing": "sine.inOut",
+      "channels": [
+        "arm-near"
+      ],
+      "startPose": "targetAngles × fromFactor",
+      "endPose": "targetAngles × toFactor",
+      "description": "Blend authored shoulder/elbow/wrist angles toward contact",
+      "status": "Partial",
+      "limitations": "V4 reaching reference not bound to rig as approved animation; joint lengths fixed"
+    },
+    {
+      "id": "touch",
+      "defaultDuration": 0.55,
+      "easing": "sine.inOut",
+      "channels": [
+        "arm-near"
+      ],
+      "startPose": "targetAngles × fromFactor",
+      "endPose": "targetAngles × 1.0",
+      "description": "Finish authored contact keyframe, verify world anchors",
+      "status": "Partial",
+      "limitations": "Exact anchor solve only for supplied V4 front pair and fixed grounded layout; no IK"
+    },
+    {
+      "id": "release",
+      "defaultDuration": 0.6,
+      "easing": "sine.inOut",
+      "channels": [
+        "arm-near"
+      ],
+      "startPose": "targetAngles × 1.0",
+      "endPose": "targetAngles × 0.0",
+      "description": "Withdraw hand along same authored joint trajectory",
+      "status": "Partial",
+      "limitations": "Not shown in 8s scene; no automatic partner retreat"
+    },
+    {
+      "id": "walk",
+      "defaultDuration": 2.5,
+      "easing": "sine.inOut",
+      "channels": [
+        "actor-x",
+        "gait",
+        "arm-near"
+      ],
+      "startPose": "x=fromX, gait=0",
+      "endPose": "x=toX, gait=1",
+      "description": "Move actor root with bounded front-view leg/arm swing",
+      "status": "Partial",
+      "limitations": "Approved walk-cycle reference is NOT rig-bound; front-view technical proxy only"
+    },
+    {
+      "id": "stopWalking",
+      "defaultDuration": 0.5,
+      "easing": "sine.inOut",
+      "channels": [
+        "gait",
+        "arm-near"
+      ],
+      "startPose": "gait=1",
+      "endPose": "gait=0",
+      "description": "Fade out leg/arm gait while preserving actor x",
+      "status": "Partial",
+      "limitations": "No step-specific planted-foot correction; static foot position restored"
+    }
+  ],
+  "demo": {
+    "duration": 8,
+    "fps": 30,
+    "canvas": [
+      1080,
+      1920
+    ],
+    "scene": "scenes/scene-001.js",
+    "sourceContact": {
+      "malePart": "hand-R.contact",
+      "femalePart": "hand-L.contact",
+      "sourceToleranceStagePx": 2,
+      "worldScale": 1.1,
+      "contactTime": 6.85
+    },
+    "sourceEnvironment": "Rain SVG V3; SMIL transforms converted into deterministic absolute-time vector rain"
+  },
+  "notSupported": [
+    "true lookAt eye tracking / 3D yaw",
+    "IK or physics",
+    "automatic arbitrary-pair touch solving",
+    "approved side-view walking",
+    "dynamic facial expressions in 3/4 or side views",
+    "multi-scene persistent actors"
+  ]
+}

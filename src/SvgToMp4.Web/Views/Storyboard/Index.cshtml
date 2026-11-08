@@ -2,6 +2,7 @@
 <!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI SVG Storyboard Studio</title><link rel="stylesheet" href="/story/studio.css"><script type="module" src="/story/studio.mjs"></script></head>
 <body>
 <header><a class="logo" href="/">◈ <strong>STORY<span>STUDIO</span></strong></a><span class="header-sub">SVG · Story to Video</span><select id="projectList" aria-label="Project đã lưu"><option value="">Mở project đã lưu…</option></select><button id="newStory">＋ Từ code</button><button id="importCode">Import code</button><button id="sampleStory">Câu chuyện mẫu</button><button id="importStory">Import ZIP</button><a id="exportStory" class="button" hidden>Export ZIP</a><button id="saveStory">Lưu & áp dụng</button><button id="renderStory" class="primary">Render MP4 ↗</button><a class="legacy" href="/whiteboard">Whiteboard / Doodle</a><input id="zipInput" type="file" accept=".zip" hidden><input id="codeInput" type="file" accept=".js,.html,.svg" hidden></header>
+<nav class="generator-entry"><a href="/episodes">＋ Tạo tập từ Production Kit</a></nav>
 <div id="status" role="status" aria-live="polite">Import một Story ZIP hoặc mở câu chuyện mẫu để bắt đầu.</div>
 <main>
 <aside class="scenes panel"><div class="heading"><h2>STORYBOARD</h2><span id="sceneCount">0 cảnh</span></div><div id="scenes"></div><div class="scene-help">Kéo để sắp xếp cảnh. Thay đổi được lưu thành revision mới.</div></aside>

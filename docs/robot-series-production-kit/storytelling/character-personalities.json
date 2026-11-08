@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": "Editorial interpretations of Episode 01 only; not user-approved canon",
+  "characters": [
+    {
+      "id": "robot-male",
+      "role": "Male robot",
+      "observedEpisodeBehavior": "Approaches, smiles, initiates hand contact",
+      "personalityProposal": [
+        "gentle",
+        "reserved"
+      ],
+      "canonStatus": "Provisional"
+    },
+    {
+      "id": "robot-female",
+      "role": "Female robot",
+      "observedEpisodeBehavior": "Notices partner, reacts emotionally, reciprocates hand contact",
+      "personalityProposal": [
+        "expressive",
+        "warm"
+      ],
+      "canonStatus": "Provisional"
+    }
+  ]
+}
