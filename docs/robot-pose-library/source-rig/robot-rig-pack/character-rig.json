@@ -1,0 +1,2687 @@
+{
+  "version": "1.0",
+  "rigs": [
+    {
+      "id": "robot-men-front",
+      "sex": "men",
+      "view": "front",
+      "canvas": [
+        465,
+        810
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              232,
+              475
+            ]
+          },
+          "visible": true
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            232,
+            475
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              0,
+              -93
+            ],
+            "shoulder-L": [
+              -106,
+              -61
+            ],
+            "hip-L": [
+              -60,
+              105
+            ],
+            "shoulder-R": [
+              106,
+              -61
+            ],
+            "hip-R": [
+              60,
+              105
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            0,
+            -93
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              0,
+              -355
+            ],
+            "face": [
+              0,
+              -175
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            -106,
+            -61
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              -13.52,
+              54.08
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            -13.52,
+            54.08
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              -12.48,
+              49.92
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            -12.48,
+            49.92
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              27
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            -60,
+            105
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              60
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            60
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              97
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            97
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              48
+            ],
+            "toe": [
+              55,
+              30
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            106,
+            -61
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              13.52,
+              54.08
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-R"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            13.52,
+            54.08
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              12.48,
+              49.92
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            12.48,
+            49.92
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              27
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            60,
+            105
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              60
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-R"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            60
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              97
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            97
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              48
+            ],
+            "toe": [
+              55,
+              30
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "robot-men-front.svg",
+      "sourceCrop": [
+        65,
+        65,
+        530,
+        875
+      ]
+    },
+    {
+      "id": "robot-men-three-quarter",
+      "sex": "men",
+      "view": "three-quarter",
+      "canvas": [
+        465,
+        810
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              232,
+              475
+            ]
+          },
+          "visible": true
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            232,
+            475
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              0,
+              -93
+            ],
+            "shoulder-L": [
+              -91,
+              -62
+            ],
+            "hip-L": [
+              -42,
+              108
+            ],
+            "shoulder-R": [
+              105,
+              -49
+            ],
+            "hip-R": [
+              48,
+              108
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            0,
+            -93
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              0,
+              -355
+            ],
+            "face": [
+              55,
+              -175
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            -91,
+            -62
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              -13.52,
+              54.08
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            -13.52,
+            54.08
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              -12.48,
+              49.92
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            -12.48,
+            49.92
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              27
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            -42,
+            108
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              60
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            60
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              97
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            97
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              48
+            ],
+            "toe": [
+              55,
+              30
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            105,
+            -49
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              13.52,
+              54.08
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-R"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            13.52,
+            54.08
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              12.48,
+              49.92
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            12.48,
+            49.92
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              27
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            48,
+            108
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              60
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-R"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            60
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              97
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            97
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              48
+            ],
+            "toe": [
+              55,
+              30
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "robot-men-three-quarter.svg",
+      "sourceCrop": [
+        610,
+        65,
+        1075,
+        875
+      ]
+    },
+    {
+      "id": "robot-men-side",
+      "sex": "men",
+      "view": "side",
+      "canvas": [
+        465,
+        810
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              238,
+              480
+            ]
+          },
+          "visible": true
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            238,
+            480
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              -8,
+              -98
+            ],
+            "shoulder-L": [
+              14,
+              -62
+            ],
+            "hip-L": [
+              0,
+              110
+            ],
+            "shoulder-R": [
+              -5,
+              -65
+            ],
+            "hip-R": [
+              7,
+              110
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            -8,
+            -98
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              0,
+              -355
+            ],
+            "face": [
+              110,
+              -175
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            14,
+            -62
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              0.0,
+              55.64
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            0.0,
+            55.64
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              0.0,
+              51.36
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            0.0,
+            51.36
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              27
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            0,
+            110
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              60
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            60
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              97
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            97
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              48
+            ],
+            "toe": [
+              55,
+              30
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            -5,
+            -65
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              0.0,
+              53.56
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "shoulder-R"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            0.0,
+            53.56
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              0.0,
+              49.44
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            0.0,
+            49.44
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              27
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            7,
+            110
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              60
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "hip-R"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            60
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              97
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            97
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              48
+            ],
+            "toe": [
+              55,
+              30
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "ankle"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "robot-men-side.svg",
+      "sourceCrop": [
+        1145,
+        65,
+        1610,
+        875
+      ]
+    },
+    {
+      "id": "robot-women-front",
+      "sex": "women",
+      "view": "front",
+      "canvas": [
+        455,
+        670
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              223,
+              505
+            ]
+          },
+          "visible": true
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            223,
+            505
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              0,
+              -66
+            ],
+            "shoulder-L": [
+              -80,
+              -51
+            ],
+            "hip-L": [
+              -43,
+              66
+            ],
+            "shoulder-R": [
+              80,
+              -51
+            ],
+            "hip-R": [
+              43,
+              66
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            0,
+            -66
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              0,
+              -410
+            ],
+            "face": [
+              0,
+              -175
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            -80,
+            -51
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              -12.48,
+              31.720000000000002
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            -12.48,
+            31.720000000000002
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              -11.52,
+              29.279999999999998
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            -11.52,
+            29.279999999999998
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              18
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            -43,
+            66
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              26
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            26
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              24
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            24
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              29
+            ],
+            "toe": [
+              31,
+              20
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            80,
+            -51
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              12.48,
+              31.720000000000002
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-R"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            12.48,
+            31.720000000000002
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              11.52,
+              29.279999999999998
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            11.52,
+            29.279999999999998
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              18
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            43,
+            66
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              26
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-R"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            26
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              24
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            24
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              29
+            ],
+            "toe": [
+              31,
+              20
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "robot-women-front.svg",
+      "sourceCrop": [
+        270,
+        5,
+        725,
+        675
+      ]
+    },
+    {
+      "id": "robot-women-three-quarter",
+      "sex": "women",
+      "view": "three-quarter",
+      "canvas": [
+        455,
+        670
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              223,
+              505
+            ]
+          },
+          "visible": true
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            223,
+            505
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              0,
+              -66
+            ],
+            "shoulder-L": [
+              -79,
+              -44
+            ],
+            "hip-L": [
+              -32,
+              66
+            ],
+            "shoulder-R": [
+              63,
+              -45
+            ],
+            "hip-R": [
+              38,
+              66
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            0,
+            -66
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              0,
+              -410
+            ],
+            "face": [
+              55,
+              -175
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            -79,
+            -44
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              -12.48,
+              31.720000000000002
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            -12.48,
+            31.720000000000002
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              -11.52,
+              29.279999999999998
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            -11.52,
+            29.279999999999998
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              18
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            -32,
+            66
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              26
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            26
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              24
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            24
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              29
+            ],
+            "toe": [
+              31,
+              20
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            63,
+            -45
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              12.48,
+              31.720000000000002
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-R"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            12.48,
+            31.720000000000002
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              11.52,
+              29.279999999999998
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            11.52,
+            29.279999999999998
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              18
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            38,
+            66
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              26
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-R"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            26
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              24
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            24
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              29
+            ],
+            "toe": [
+              31,
+              20
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "robot-women-three-quarter.svg",
+      "sourceCrop": [
+        795,
+        5,
+        1250,
+        675
+      ]
+    },
+    {
+      "id": "robot-women-side",
+      "sex": "women",
+      "view": "side",
+      "canvas": [
+        455,
+        670
+      ],
+      "coordinateSystem": "SVG pixels; +x right; +y down; positive degrees clockwise; L/R = screen-left/right in front view, retained as chain labels in other views",
+      "nodes": [
+        {
+          "id": "root",
+          "parent": null,
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "torso": [
+              223,
+              505
+            ]
+          },
+          "visible": true
+        },
+        {
+          "id": "torso",
+          "parent": "root",
+          "mount": [
+            223,
+            505
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "neck": [
+              0,
+              -66
+            ],
+            "shoulder-L": [
+              8,
+              -46
+            ],
+            "hip-L": [
+              5,
+              64
+            ],
+            "shoulder-R": [
+              -42,
+              -40
+            ],
+            "hip-R": [
+              10,
+              64
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "torso"
+        },
+        {
+          "id": "neck",
+          "parent": "torso",
+          "mount": [
+            0,
+            -66
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -180,
+            180
+          ],
+          "anchors": {
+            "head": [
+              0,
+              0
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "neck"
+        },
+        {
+          "id": "head",
+          "parent": "neck",
+          "mount": [
+            0,
+            0
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -15,
+            15
+          ],
+          "anchors": {
+            "top": [
+              0,
+              -410
+            ],
+            "face": [
+              110,
+              -175
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "head"
+        },
+        {
+          "id": "upper-arm-L",
+          "parent": "torso",
+          "mount": [
+            8,
+            -46
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              0.0,
+              33.28
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "shoulder-L"
+        },
+        {
+          "id": "forearm-L",
+          "parent": "upper-arm-L",
+          "mount": [
+            0.0,
+            33.28
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              0.0,
+              30.72
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-L",
+          "parent": "forearm-L",
+          "mount": [
+            0.0,
+            30.72
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              18
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-L",
+          "parent": "torso",
+          "mount": [
+            5,
+            64
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              26
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "hip-L"
+        },
+        {
+          "id": "shin-L",
+          "parent": "thigh-L",
+          "mount": [
+            0,
+            26
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              24
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-L",
+          "parent": "shin-L",
+          "mount": [
+            0,
+            24
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              29
+            ],
+            "toe": [
+              31,
+              20
+            ]
+          },
+          "visible": true,
+          "parentAnchor": "ankle"
+        },
+        {
+          "id": "upper-arm-R",
+          "parent": "torso",
+          "mount": [
+            -42,
+            -40
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -70,
+            70
+          ],
+          "anchors": {
+            "elbow": [
+              0.0,
+              20.8
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "shoulder-R"
+        },
+        {
+          "id": "forearm-R",
+          "parent": "upper-arm-R",
+          "mount": [
+            0.0,
+            20.8
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "wrist": [
+              0.0,
+              19.2
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "elbow"
+        },
+        {
+          "id": "hand-R",
+          "parent": "forearm-R",
+          "mount": [
+            0.0,
+            19.2
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -30,
+            30
+          ],
+          "anchors": {
+            "contact": [
+              0,
+              18
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "wrist"
+        },
+        {
+          "id": "thigh-R",
+          "parent": "torso",
+          "mount": [
+            10,
+            64
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -40,
+            40
+          ],
+          "anchors": {
+            "knee": [
+              0,
+              26
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "hip-R"
+        },
+        {
+          "id": "shin-R",
+          "parent": "thigh-R",
+          "mount": [
+            0,
+            26
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -65,
+            65
+          ],
+          "anchors": {
+            "ankle": [
+              0,
+              24
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "knee"
+        },
+        {
+          "id": "foot-R",
+          "parent": "shin-R",
+          "mount": [
+            0,
+            24
+          ],
+          "pivot": [
+            0,
+            0
+          ],
+          "angle": 0,
+          "limits": [
+            -20,
+            20
+          ],
+          "anchors": {
+            "sole": [
+              0,
+              29
+            ],
+            "toe": [
+              31,
+              20
+            ]
+          },
+          "visible": false,
+          "parentAnchor": "ankle"
+        }
+      ],
+      "scope": "2D cutout in-plane rotations; view changes use independent artwork; not 3D yaw",
+      "source": "robot-women-side.svg",
+      "sourceCrop": [
+        1315,
+        5,
+        1770,
+        675
+      ]
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "1.0",
+  "libraryId": "robot-interaction-library",
+  "interactions": [
+    {
+      "interactionId": "gentle-hug",
+      "characters": [
+        "men",
+        "women"
+      ],
+      "view": "three-quarter",
+      "requiredParts": [
+        "both-character-approved-action-artwork"
+      ],
+      "contactAnchors": [
+        "mutual.arm-contact",
+        "torso.contact"
+      ],
+      "states": [
+        {
+          "stateId": "gentle-hug-1",
+          "artwork": "artwork/interactions/gentle-hug-1.png",
+          "status": "Supported",
+          "keyIndex": 0
+        },
+        {
+          "stateId": "gentle-hug-2",
+          "artwork": "artwork/interactions/gentle-hug-2.png",
+          "status": "Supported",
+          "keyIndex": 1
+        },
+        {
+          "stateId": "gentle-hug-3",
+          "artwork": "artwork/interactions/gentle-hug-3.png",
+          "status": "Supported",
+          "keyIndex": 2
+        },
+        {
+          "stateId": "gentle-hug-4",
+          "artwork": "artwork/interactions/gentle-hug-4.png",
+          "status": "Supported",
+          "keyIndex": 3
+        }
+      ],
+      "supportedTransitions": [
+        "gentle-hug"
+      ],
+      "status": "Partial",
+      "validationNotes": "All four approved action states are addressable. Animation timing and deterministic seek acceptance remain pending.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "interactionId": "hold-hand",
+      "characters": [
+        "men",
+        "women"
+      ],
+      "view": "three-quarter",
+      "requiredParts": [
+        "both-character-approved-action-artwork"
+      ],
+      "contactAnchors": [
+        "men.hand-R.contact",
+        "women.hand-L.contact"
+      ],
+      "states": [
+        {
+          "stateId": "hold-hand-1",
+          "artwork": "artwork/interactions/hold-hand-1.png",
+          "status": "Supported",
+          "keyIndex": 0
+        },
+        {
+          "stateId": "hold-hand-2",
+          "artwork": "artwork/interactions/hold-hand-2.png",
+          "status": "Supported",
+          "keyIndex": 1
+        },
+        {
+          "stateId": "hold-hand-3",
+          "artwork": "artwork/interactions/hold-hand-3.png",
+          "status": "Supported",
+          "keyIndex": 2
+        },
+        {
+          "stateId": "hold-hand-4",
+          "artwork": "artwork/interactions/hold-hand-4.png",
+          "status": "Supported",
+          "keyIndex": 3
+        }
+      ],
+      "supportedTransitions": [
+        "hold-hand"
+      ],
+      "status": "Partial",
+      "validationNotes": "All four approved action states are addressable. Animation timing and deterministic seek acceptance remain pending.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "interactionId": "lean-on-shoulder",
+      "characters": [
+        "men",
+        "women"
+      ],
+      "view": "three-quarter",
+      "requiredParts": [
+        "both-character-approved-action-artwork"
+      ],
+      "contactAnchors": [
+        "head.shoulder-contact",
+        "seated.floor-contact"
+      ],
+      "states": [
+        {
+          "stateId": "lean-on-shoulder-1",
+          "artwork": "artwork/interactions/lean-on-shoulder-1.png",
+          "status": "Supported",
+          "keyIndex": 0
+        },
+        {
+          "stateId": "lean-on-shoulder-2",
+          "artwork": "artwork/interactions/lean-on-shoulder-2.png",
+          "status": "Supported",
+          "keyIndex": 1
+        },
+        {
+          "stateId": "lean-on-shoulder-3",
+          "artwork": "artwork/interactions/lean-on-shoulder-3.png",
+          "status": "Supported",
+          "keyIndex": 2
+        },
+        {
+          "stateId": "lean-on-shoulder-4",
+          "artwork": "artwork/interactions/lean-on-shoulder-4.png",
+          "status": "Supported",
+          "keyIndex": 3
+        }
+      ],
+      "supportedTransitions": [
+        "lean-on-shoulder"
+      ],
+      "status": "Partial",
+      "validationNotes": "All four approved action states are addressable. Animation timing and deterministic seek acceptance remain pending.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "interactionId": "touch-hand",
+      "characters": [
+        "men",
+        "women"
+      ],
+      "view": "three-quarter",
+      "requiredParts": [
+        "both-character-approved-action-artwork"
+      ],
+      "contactAnchors": [
+        "men.hand-R.contact",
+        "women.hand-L.contact"
+      ],
+      "states": [
+        {
+          "stateId": "touch-hand-1",
+          "artwork": "artwork/interactions/touch-hand-1.png",
+          "status": "Supported",
+          "keyIndex": 0
+        },
+        {
+          "stateId": "touch-hand-2",
+          "artwork": "artwork/interactions/touch-hand-2.png",
+          "status": "Supported",
+          "keyIndex": 1
+        },
+        {
+          "stateId": "touch-hand-3",
+          "artwork": "artwork/interactions/touch-hand-3.png",
+          "status": "Supported",
+          "keyIndex": 2
+        },
+        {
+          "stateId": "touch-hand-4",
+          "artwork": "artwork/interactions/touch-hand-4.png",
+          "status": "Supported",
+          "keyIndex": 3
+        }
+      ],
+      "supportedTransitions": [
+        "touch-hand"
+      ],
+      "status": "Partial",
+      "validationNotes": "All four approved action states are addressable. Animation timing and deterministic seek acceptance remain pending.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    }
+  ]
+}

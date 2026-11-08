@@ -1,0 +1,960 @@
+{
+  "schemaVersion": "2.0",
+  "libraryId": "robot-pose-library",
+  "sourcePolicy": "Approved pose/action sheets are authoritative artwork keys. Rig SVGs provide cutout pivots between keys; pose silhouettes use artwork switching.",
+  "statusLegend": {
+    "Supported": "Exact approved artwork exists and is addressable by the preview.",
+    "Partial": "Artwork exists but playback/timing/deterministic seek acceptance is incomplete.",
+    "Unavailable": "Required approved artwork is absent."
+  },
+  "poses": [
+    {
+      "character": "men",
+      "view": "front",
+      "poseId": "idle",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-rigging-breakdown-and-pivot-points.png",
+        "rigId": "robot-men-front"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/men-standing-front.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "men",
+      "view": "front",
+      "poseId": "standing-front",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-rigging-breakdown-and-pivot-points.png",
+        "rigId": "robot-men-front"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/men-standing-front.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "men",
+      "view": "three-quarter",
+      "poseId": "standing-three-quarter",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-rigging-breakdown-and-pivot-points.png",
+        "rigId": "robot-men-three-quarter"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/men-standing-three-quarter.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "men",
+      "view": "side",
+      "poseId": "standing-side",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-rigging-breakdown-and-pivot-points.png",
+        "rigId": "robot-men-side"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/men-standing-side.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "men",
+      "view": "side",
+      "poseId": "walking-reference",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-rigging-breakdown-and-pivot-points.png",
+        "rigId": "robot-men-side"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [
+        "walk-side"
+      ],
+      "artwork": "artwork/poses/men-walking-reference.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "men",
+      "view": "three-quarter",
+      "poseId": "reaching",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-rigging-breakdown-and-pivot-points.png",
+        "rigId": "robot-men-three-quarter"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/men-reaching.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "men",
+      "view": "three-quarter",
+      "poseId": "sitting",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-rigging-breakdown-and-pivot-points.png",
+        "rigId": "robot-men-three-quarter"
+      },
+      "contactAnchors": [
+        "hip.seat",
+        "hand-L.floor",
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [
+        "sit-down",
+        "stand-up"
+      ],
+      "artwork": "artwork/poses/men-sitting.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "men",
+      "view": "three-quarter",
+      "poseId": "lying",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-rigging-breakdown-and-pivot-points.png",
+        "rigId": "robot-men-three-quarter"
+      },
+      "contactAnchors": [
+        "body.floor-contact"
+      ],
+      "supportedTransitions": [
+        "lie-down",
+        "get-up"
+      ],
+      "artwork": "artwork/poses/men-lying.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "men",
+      "view": "three-quarter",
+      "poseId": "getting-up",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-rigging-breakdown-and-pivot-points.png",
+        "rigId": "robot-men-three-quarter"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/men-getting-up.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "men",
+      "view": "gesture-isolated",
+      "poseId": "gesture-relaxed",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/men-relaxed.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "men",
+      "view": "gesture-isolated",
+      "poseId": "gesture-open-greeting",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/men-open-greeting.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "men",
+      "view": "gesture-isolated",
+      "poseId": "gesture-touch-contact",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [
+        "hand.contact"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/men-touch-contact.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "men",
+      "view": "gesture-isolated",
+      "poseId": "gesture-hold-hand",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [
+        "hand.hand-in-hand"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/men-hold-hand.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "men",
+      "view": "gesture-isolated",
+      "poseId": "gesture-point",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/men-point.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "men",
+      "view": "gesture-isolated",
+      "poseId": "gesture-support",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [
+        "hand.floor"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/men-support.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "men",
+      "view": "gesture-isolated",
+      "poseId": "gesture-gift",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/men-gift.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "men",
+      "view": "gesture-isolated",
+      "poseId": "gesture-chest-emotion",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-men-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/men-chest-emotion.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "women",
+      "view": "front",
+      "poseId": "idle",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-rigging-breakdown-and-pivot-points.jpg",
+        "rigId": "robot-women-front"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/women-standing-front.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "women",
+      "view": "front",
+      "poseId": "standing-front",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-rigging-breakdown-and-pivot-points.jpg",
+        "rigId": "robot-women-front"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/women-standing-front.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "women",
+      "view": "three-quarter",
+      "poseId": "standing-three-quarter",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-rigging-breakdown-and-pivot-points.jpg",
+        "rigId": "robot-women-three-quarter"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/women-standing-three-quarter.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "women",
+      "view": "side",
+      "poseId": "standing-side",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-rigging-breakdown-and-pivot-points.jpg",
+        "rigId": "robot-women-side"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/women-standing-side.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "women",
+      "view": "side",
+      "poseId": "walking-reference",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-rigging-breakdown-and-pivot-points.jpg",
+        "rigId": "robot-women-side"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [
+        "walk-side"
+      ],
+      "artwork": "artwork/poses/women-walking-reference.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "women",
+      "view": "three-quarter",
+      "poseId": "reaching",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-rigging-breakdown-and-pivot-points.jpg",
+        "rigId": "robot-women-three-quarter"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/women-reaching.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "women",
+      "view": "three-quarter",
+      "poseId": "sitting",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-rigging-breakdown-and-pivot-points.jpg",
+        "rigId": "robot-women-three-quarter"
+      },
+      "contactAnchors": [
+        "hip.seat",
+        "hand-L.floor",
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [
+        "sit-down",
+        "stand-up"
+      ],
+      "artwork": "artwork/poses/women-sitting.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "women",
+      "view": "three-quarter",
+      "poseId": "lying",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-rigging-breakdown-and-pivot-points.jpg",
+        "rigId": "robot-women-three-quarter"
+      },
+      "contactAnchors": [
+        "body.floor-contact"
+      ],
+      "supportedTransitions": [
+        "lie-down",
+        "get-up"
+      ],
+      "artwork": "artwork/poses/women-lying.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "women",
+      "view": "three-quarter",
+      "poseId": "getting-up",
+      "requiredParts": [
+        "head",
+        "face",
+        "torso",
+        "upper-arm-L",
+        "forearm-L",
+        "hand-L",
+        "upper-arm-R",
+        "forearm-R",
+        "hand-R",
+        "thigh-L",
+        "shin-L",
+        "foot-L",
+        "thigh-R",
+        "shin-R",
+        "foot-R"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-rigging-breakdown-and-pivot-points.jpg",
+        "rigId": "robot-women-three-quarter"
+      },
+      "contactAnchors": [
+        "foot-L.sole",
+        "foot-R.sole"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/poses/women-getting-up.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved character pose sheet; no redrawing, 3D turn, or limb scaling."
+    },
+    {
+      "character": "women",
+      "view": "gesture-isolated",
+      "poseId": "gesture-relaxed",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/women-relaxed.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "women",
+      "view": "gesture-isolated",
+      "poseId": "gesture-open-greeting",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/women-open-greeting.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "women",
+      "view": "gesture-isolated",
+      "poseId": "gesture-touch-contact",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [
+        "hand.contact"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/women-touch-contact.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "women",
+      "view": "gesture-isolated",
+      "poseId": "gesture-hold-hand",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [
+        "hand.hand-in-hand"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/women-hold-hand.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "women",
+      "view": "gesture-isolated",
+      "poseId": "gesture-point",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/women-point.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "women",
+      "view": "gesture-isolated",
+      "poseId": "gesture-support",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [
+        "hand.floor"
+      ],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/women-support.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "women",
+      "view": "gesture-isolated",
+      "poseId": "gesture-gift",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/women-gift.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    },
+    {
+      "character": "women",
+      "view": "gesture-isolated",
+      "poseId": "gesture-chest-emotion",
+      "requiredParts": [
+        "approved-arm-and-hand-artwork"
+      ],
+      "pivots": {
+        "source": "artwork/references/robot-women-hand-and-arm-variants.png",
+        "mount": "shoulder/contact anchor supplied by action composition"
+      },
+      "contactAnchors": [],
+      "supportedTransitions": [],
+      "artwork": "artwork/gestures/women-chest-emotion.png",
+      "renderMethod": "approved-artwork-switch",
+      "status": "Supported",
+      "validationNotes": "Direct crop from the approved hand-and-arm variants sheet."
+    }
+  ]
+}

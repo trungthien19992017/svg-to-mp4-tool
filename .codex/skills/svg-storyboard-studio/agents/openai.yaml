@@ -1,0 +1,4 @@
+interface:
+  display_name: "SVG Storyboard Studio"
+  short_description: "Repository-specific Story and whiteboard guidance"
+  default_prompt: "Analyze or modify SVG Storyboard Studio using current source, contracts, safety boundaries, and layered verification."

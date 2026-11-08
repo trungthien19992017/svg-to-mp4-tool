@@ -1,0 +1,114 @@
+{
+  "episode": {
+    "id": "ep-01",
+    "title": "Chạm Một Chút Thôi (v2)",
+    "duration_seconds": 30,
+    "fps": 30,
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "global_audio": {
+    "ambience": {
+      "src": "audio/ambience/soft-rain.wav",
+      "loop": true,
+      "volume": 0.45
+    },
+    "bgm": [
+      {
+        "src": "audio/music/warm-theme.wav",
+        "start_time": 0,
+        "fade_in": 1.5,
+        "volume": 0.7
+      },
+      {
+        "src": "audio/music/ending.wav",
+        "start_time": 22,
+        "fade_in": 1.0,
+        "volume": 0.8
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "scene_id": "scene-001",
+      "name": "Ngắm mưa qua ô cửa",
+      "duration": 5.0,
+      "script_file": "scenes/scene-001.js",
+      "layers": {
+        "background": "assets/backgrounds/rainy-room.svg",
+        "back_props": "assets/props/layer-back.svg",
+        "characters": [
+          { "id": "robot_male", "src": "assets/characters/robot-male.svg", "x": 580, "y": 620 },
+          { "id": "robot_female", "src": "assets/characters/robot-female.svg", "x": 1040, "y": 630 }
+        ],
+        "front_props": "assets/props/layer-front.svg"
+      },
+      "camera": { "type": "slow-zoom-in", "factor": 1.05 }
+    },
+    {
+      "scene_id": "scene-002",
+      "name": "Ngập ngừng & Giật mình",
+      "duration": 5.0,
+      "script_file": "scenes/scene-002.js",
+      "layers": {
+        "background": "assets/backgrounds/rainy-room.svg",
+        "characters": [
+          { "id": "robot_male", "src": "assets/characters/robot-male.svg", "x": 600, "y": 620 },
+          { "id": "robot_female", "src": "assets/characters/robot-female.svg", "x": 1020, "y": 630 }
+        ]
+      },
+      "sfx": [
+        { "src": "audio/sfx/startle.wav", "trigger_time": 3.8, "volume": 0.6 }
+      ]
+    },
+    {
+      "scene_id": "scene-003",
+      "name": "Cái chạm khẽ",
+      "duration": 6.0,
+      "script_file": "scenes/scene-003.js",
+      "layers": {
+        "background": "assets/backgrounds/rainy-room.svg",
+        "characters": [
+          { "id": "robot_male", "src": "assets/characters/robot-male.svg", "action": "hand-reach" },
+          { "id": "robot_female", "src": "assets/characters/robot-female.svg", "action": "idle" }
+        ]
+      },
+      "sfx": [
+        { "src": "audio/sfx/hand-touch.wav", "trigger_time": 1.5, "volume": 0.75 }
+      ]
+    },
+    {
+      "scene_id": "scene-004",
+      "name": "Nhịp đập trái tim cơ học",
+      "duration": 6.0,
+      "script_file": "scenes/scene-004.js",
+      "layers": {
+        "background": "assets/backgrounds/rainy-room.svg",
+        "characters": [
+          { "id": "robot_male", "src": "assets/characters/robot-male.svg" },
+          { "id": "robot_female", "src": "assets/characters/robot-female.svg" }
+        ],
+        "objects": [
+          { "id": "heart_pulse", "src": "assets/objects/heart.svg", "anim": "pulse-glow", "loop": true }
+        ]
+      }
+    },
+    {
+      "scene_id": "scene-005",
+      "name": "Bình yên bên nhau & Kết thúc",
+      "duration": 8.0,
+      "script_file": "scenes/scene-005.js",
+      "layers": {
+        "background": "assets/backgrounds/rainy-room.svg",
+        "characters": [
+          { "id": "robot_male", "src": "assets/characters/robot-male.svg", "pose": "lean-in" },
+          { "id": "robot_female", "src": "assets/characters/robot-female.svg", "pose": "hold-hand" }
+        ],
+        "front_props": "assets/props/layer-front.svg"
+      },
+      "camera": { "type": "slow-pan-out", "fade_out": 2.0 }
+    }
+  ]
+}

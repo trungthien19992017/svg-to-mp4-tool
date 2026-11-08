@@ -1,0 +1,86 @@
+[
+  {
+    "name": "robot-men-front",
+    "sex": "men",
+    "view": "front",
+    "width": 465,
+    "height": 810,
+    "source_box": [
+      65,
+      65,
+      530,
+      875
+    ],
+    "paths": 17
+  },
+  {
+    "name": "robot-men-three-quarter",
+    "sex": "men",
+    "view": "three-quarter",
+    "width": 465,
+    "height": 810,
+    "source_box": [
+      610,
+      65,
+      1075,
+      875
+    ],
+    "paths": 22
+  },
+  {
+    "name": "robot-men-side",
+    "sex": "men",
+    "view": "side",
+    "width": 465,
+    "height": 810,
+    "source_box": [
+      1145,
+      65,
+      1610,
+      875
+    ],
+    "paths": 15
+  },
+  {
+    "name": "robot-women-front",
+    "sex": "women",
+    "view": "front",
+    "width": 455,
+    "height": 670,
+    "source_box": [
+      270,
+      5,
+      725,
+      675
+    ],
+    "paths": 20
+  },
+  {
+    "name": "robot-women-three-quarter",
+    "sex": "women",
+    "view": "three-quarter",
+    "width": 455,
+    "height": 670,
+    "source_box": [
+      795,
+      5,
+      1250,
+      675
+    ],
+    "paths": 19
+  },
+  {
+    "name": "robot-women-side",
+    "sex": "women",
+    "view": "side",
+    "width": 455,
+    "height": 670,
+    "source_box": [
+      1315,
+      5,
+      1770,
+      675
+    ],
+    "paths": 13
+  }
+]

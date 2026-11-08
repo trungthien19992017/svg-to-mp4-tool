@@ -1,0 +1,56 @@
+[
+  {
+    "id": "robot-men-front",
+    "poses": 60,
+    "jointPairs": 14,
+    "maskOverlapFailures": [],
+    "minOverlapPixelsHalfResolution": 499,
+    "maxAttachmentErrorPx": 5.684341886080802e-14,
+    "reverseSeekRenderHashMatch": true
+  },
+  {
+    "id": "robot-men-three-quarter",
+    "poses": 60,
+    "jointPairs": 14,
+    "maskOverlapFailures": [],
+    "minOverlapPixelsHalfResolution": 560,
+    "maxAttachmentErrorPx": 5.684341886080802e-14,
+    "reverseSeekRenderHashMatch": true
+  },
+  {
+    "id": "robot-men-side",
+    "poses": 48,
+    "jointPairs": 8,
+    "maskOverlapFailures": [],
+    "minOverlapPixelsHalfResolution": 630,
+    "maxAttachmentErrorPx": 0,
+    "reverseSeekRenderHashMatch": true
+  },
+  {
+    "id": "robot-women-front",
+    "poses": 60,
+    "jointPairs": 14,
+    "maskOverlapFailures": [],
+    "minOverlapPixelsHalfResolution": 310,
+    "maxAttachmentErrorPx": 1.4210854715202004e-14,
+    "reverseSeekRenderHashMatch": true
+  },
+  {
+    "id": "robot-women-three-quarter",
+    "poses": 60,
+    "jointPairs": 14,
+    "maskOverlapFailures": [],
+    "minOverlapPixelsHalfResolution": 389,
+    "maxAttachmentErrorPx": 1.4210854715202004e-14,
+    "reverseSeekRenderHashMatch": true
+  },
+  {
+    "id": "robot-women-side",
+    "poses": 48,
+    "jointPairs": 8,
+    "maskOverlapFailures": [],
+    "minOverlapPixelsHalfResolution": 391,
+    "maxAttachmentErrorPx": 0,
+    "reverseSeekRenderHashMatch": true
+  }
+]

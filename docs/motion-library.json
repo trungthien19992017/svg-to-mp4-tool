@@ -1,0 +1,392 @@
+{
+  "schemaVersion": "2.0",
+  "libraryId": "robot-motion-library",
+  "policy": {
+    "technique": "Hybrid cutout and explicit approved-artwork switching.",
+    "prohibitions": [
+      "No fake 3D turn",
+      "No excessive limb scaling",
+      "No invented intermediate pose"
+    ],
+    "statusRule": "Animated transitions remain Partial. Frame order is authored; timing stays Unspecified until the user supplies or approves cadence."
+  },
+  "motions": [
+    {
+      "motionId": "walk-side-men",
+      "character": "men",
+      "view": "side",
+      "fromPoseId": "walking-reference",
+      "toPoseId": "walking-reference",
+      "loop": true,
+      "method": "approved-artwork-switch",
+      "frames": [
+        {
+          "artwork": "artwork/walk/men-walk-1.png",
+          "contact": "stride",
+          "keyIndex": 0
+        },
+        {
+          "artwork": "artwork/walk/men-walk-2.png",
+          "contact": "passing",
+          "keyIndex": 1
+        },
+        {
+          "artwork": "artwork/walk/men-walk-3.png",
+          "contact": "passing",
+          "keyIndex": 2
+        },
+        {
+          "artwork": "artwork/walk/men-walk-4.png",
+          "contact": "stride",
+          "keyIndex": 3
+        }
+      ],
+      "status": "Partial",
+      "validationNotes": "Four approved walk keys are implemented. Keep Partial until visual cadence, foot contact, playback and arbitrary seek order pass.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "motionId": "sit-down-men",
+      "character": "men",
+      "view": "three-quarter",
+      "fromPoseId": "standing-three-quarter",
+      "toPoseId": "sitting",
+      "loop": false,
+      "method": "approved-artwork-switch",
+      "frames": [
+        {
+          "artwork": "artwork/transitions/men-sit-down-1.png",
+          "label": "standing",
+          "keyIndex": 0
+        },
+        {
+          "artwork": "artwork/transitions/men-sit-down-2.png",
+          "label": "anticipation",
+          "keyIndex": 1
+        },
+        {
+          "artwork": "artwork/transitions/men-sit-down-3.png",
+          "label": "knees-bending",
+          "keyIndex": 2
+        },
+        {
+          "artwork": "artwork/transitions/men-sit-down-4.png",
+          "label": "seat-contact",
+          "keyIndex": 3
+        },
+        {
+          "artwork": "artwork/transitions/men-sit-down-5.png",
+          "label": "sitting",
+          "keyIndex": 4
+        }
+      ],
+      "status": "Partial",
+      "validationNotes": "Five approved pose keys are implemented. Timing is not specified.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "motionId": "stand-up-men",
+      "character": "men",
+      "view": "three-quarter",
+      "fromPoseId": "sitting",
+      "toPoseId": "standing-three-quarter",
+      "loop": false,
+      "method": "approved-artwork-switch",
+      "frames": [
+        {
+          "artwork": "artwork/transitions/men-sit-down-5.png",
+          "label": "sitting",
+          "keyIndex": 0
+        },
+        {
+          "artwork": "artwork/transitions/men-sit-down-4.png",
+          "label": "seat-contact",
+          "keyIndex": 1
+        },
+        {
+          "artwork": "artwork/transitions/men-sit-down-3.png",
+          "label": "knees-bending",
+          "keyIndex": 2
+        },
+        {
+          "artwork": "artwork/transitions/men-sit-down-2.png",
+          "label": "anticipation",
+          "keyIndex": 3
+        },
+        {
+          "artwork": "artwork/transitions/men-sit-down-1.png",
+          "label": "standing",
+          "keyIndex": 4
+        }
+      ],
+      "status": "Partial",
+      "validationNotes": "Uses the approved sit sequence in reverse; playback, timing and deterministic seek acceptance remain pending.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "motionId": "lie-down-men",
+      "character": "men",
+      "view": "three-quarter",
+      "fromPoseId": "standing-three-quarter",
+      "toPoseId": "lying",
+      "loop": false,
+      "method": "endpoint-artwork-switch",
+      "frames": [
+        {
+          "artwork": "artwork/poses/men-standing-three-quarter.png",
+          "label": "standing",
+          "keyIndex": 0
+        },
+        {
+          "artwork": "artwork/poses/men-lying.png",
+          "label": "lying",
+          "keyIndex": 1
+        }
+      ],
+      "status": "Partial",
+      "validationNotes": "Approved endpoints exist; no intermediate pose is invented.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "motionId": "get-up-men",
+      "character": "men",
+      "view": "three-quarter",
+      "fromPoseId": "lying",
+      "toPoseId": "getting-up",
+      "loop": false,
+      "method": "endpoint-artwork-switch",
+      "frames": [
+        {
+          "artwork": "artwork/poses/men-lying.png",
+          "label": "lying",
+          "keyIndex": 0
+        },
+        {
+          "artwork": "artwork/poses/men-getting-up.png",
+          "label": "getting-up",
+          "keyIndex": 1
+        }
+      ],
+      "status": "Partial",
+      "validationNotes": "Approved endpoints exist; no intermediate pose is invented.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "motionId": "walk-side-women",
+      "character": "women",
+      "view": "side",
+      "fromPoseId": "walking-reference",
+      "toPoseId": "walking-reference",
+      "loop": true,
+      "method": "approved-artwork-switch",
+      "frames": [
+        {
+          "artwork": "artwork/walk/women-walk-1.png",
+          "contact": "stride",
+          "keyIndex": 0
+        },
+        {
+          "artwork": "artwork/walk/women-walk-2.png",
+          "contact": "passing",
+          "keyIndex": 1
+        },
+        {
+          "artwork": "artwork/walk/women-walk-3.png",
+          "contact": "passing",
+          "keyIndex": 2
+        },
+        {
+          "artwork": "artwork/walk/women-walk-4.png",
+          "contact": "stride",
+          "keyIndex": 3
+        }
+      ],
+      "status": "Partial",
+      "validationNotes": "Four approved walk keys are implemented. Keep Partial until visual cadence, foot contact, playback and arbitrary seek order pass.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "motionId": "sit-down-women",
+      "character": "women",
+      "view": "three-quarter",
+      "fromPoseId": "standing-three-quarter",
+      "toPoseId": "sitting",
+      "loop": false,
+      "method": "approved-artwork-switch",
+      "frames": [
+        {
+          "artwork": "artwork/transitions/women-sit-down-1.png",
+          "label": "standing",
+          "keyIndex": 0
+        },
+        {
+          "artwork": "artwork/transitions/women-sit-down-2.png",
+          "label": "anticipation",
+          "keyIndex": 1
+        },
+        {
+          "artwork": "artwork/transitions/women-sit-down-3.png",
+          "label": "knees-bending",
+          "keyIndex": 2
+        },
+        {
+          "artwork": "artwork/transitions/women-sit-down-4.png",
+          "label": "seat-contact",
+          "keyIndex": 3
+        },
+        {
+          "artwork": "artwork/transitions/women-sit-down-5.png",
+          "label": "sitting",
+          "keyIndex": 4
+        }
+      ],
+      "status": "Partial",
+      "validationNotes": "Five approved pose keys are implemented. Timing is not specified.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "motionId": "stand-up-women",
+      "character": "women",
+      "view": "three-quarter",
+      "fromPoseId": "sitting",
+      "toPoseId": "standing-three-quarter",
+      "loop": false,
+      "method": "approved-artwork-switch",
+      "frames": [
+        {
+          "artwork": "artwork/transitions/women-sit-down-5.png",
+          "label": "sitting",
+          "keyIndex": 0
+        },
+        {
+          "artwork": "artwork/transitions/women-sit-down-4.png",
+          "label": "seat-contact",
+          "keyIndex": 1
+        },
+        {
+          "artwork": "artwork/transitions/women-sit-down-3.png",
+          "label": "knees-bending",
+          "keyIndex": 2
+        },
+        {
+          "artwork": "artwork/transitions/women-sit-down-2.png",
+          "label": "anticipation",
+          "keyIndex": 3
+        },
+        {
+          "artwork": "artwork/transitions/women-sit-down-1.png",
+          "label": "standing",
+          "keyIndex": 4
+        }
+      ],
+      "status": "Partial",
+      "validationNotes": "Uses the approved sit sequence in reverse; playback, timing and deterministic seek acceptance remain pending.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "motionId": "lie-down-women",
+      "character": "women",
+      "view": "three-quarter",
+      "fromPoseId": "standing-three-quarter",
+      "toPoseId": "lying",
+      "loop": false,
+      "method": "endpoint-artwork-switch",
+      "frames": [
+        {
+          "artwork": "artwork/poses/women-standing-three-quarter.png",
+          "label": "standing",
+          "keyIndex": 0
+        },
+        {
+          "artwork": "artwork/poses/women-lying.png",
+          "label": "lying",
+          "keyIndex": 1
+        }
+      ],
+      "status": "Partial",
+      "validationNotes": "Approved endpoints exist; no intermediate pose is invented.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    },
+    {
+      "motionId": "get-up-women",
+      "character": "women",
+      "view": "three-quarter",
+      "fromPoseId": "lying",
+      "toPoseId": "getting-up",
+      "loop": false,
+      "method": "endpoint-artwork-switch",
+      "frames": [
+        {
+          "artwork": "artwork/poses/women-lying.png",
+          "label": "lying",
+          "keyIndex": 0
+        },
+        {
+          "artwork": "artwork/poses/women-getting-up.png",
+          "label": "getting-up",
+          "keyIndex": 1
+        }
+      ],
+      "status": "Partial",
+      "validationNotes": "Approved endpoints exist; no intermediate pose is invented.",
+      "timing": {
+        "status": "Unspecified",
+        "fps": null,
+        "frameDurations": null,
+        "notes": "Awaiting user-approved timing/cadence."
+      }
+    }
+  ],
+  "excludedCapabilities": [
+    {
+      "capability": "head-turn",
+      "status": "Unavailable",
+      "reason": "Only full-body view variants are supplied; no independent head-turn key set."
+    }
+  ]
+}
