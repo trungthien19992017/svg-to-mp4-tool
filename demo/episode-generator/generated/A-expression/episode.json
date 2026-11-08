@@ -1,0 +1,8 @@
+{
+  "id": "robot-demo",
+  "title": "Robot Production Kit Demo",
+  "character": "male",
+  "pose": "idle",
+  "expression": "happy",
+  "motion": "nod"
+}

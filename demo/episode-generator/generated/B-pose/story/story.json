@@ -1,0 +1,1 @@
+{"schemaVersion": "1.0", "projectId": "robot-demo", "title": "Robot Production Kit Demo", "video": {"width": 720, "height": 1280, "fps": 24, "format": "mp4"}, "assets": [{"id": "actor-art", "path": "characters/robot-male.svg"}], "scenes": [{"id": "scene-001", "source": "scenes/scene-001.js", "duration": 4, "transition": {"type": "cut", "duration": 0}}]}

@@ -1,0 +1,8 @@
+{
+  "id": "robot-demo",
+  "title": "Robot Production Kit Demo",
+  "character": "female",
+  "pose": "idle",
+  "expression": "neutral",
+  "motion": "wave"
+}

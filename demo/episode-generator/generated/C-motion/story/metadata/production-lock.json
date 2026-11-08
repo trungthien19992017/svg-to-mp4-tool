@@ -1,0 +1,34 @@
+{
+  "kitId": "robot-series-demo",
+  "version": "1.3.0",
+  "rigVersion": "robot-demo-v1",
+  "kitSha256": "deac24c0f2bf47c7cfd0e32628c48c3fb9d297f4621bb52edb064d90d33cbfd2",
+  "files": {
+    "audio/audio-catalog.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "characters/character-catalog.json": "422b532fabdaadbfb1988c161c138a6145b3a2b4377bbd4231de6b7110feab2d",
+    "characters/character-rig.json": "1a959c6d111a09f848240dd08640a5caf00422b6af213c68f30326124395453e",
+    "characters/expression-catalog.json": "e6a3314f75194c950f9f4a06aa320cbbda985ae78f9c2649481b7e7c4da2b103",
+    "characters/pose-catalog.json": "aa947120263020247311787e55519b7c635077d50e4af38fea4eadc900d709b6",
+    "characters/robot-female.svg": "8c359b34fdd12c0b65d390c55ccc7348344789d2d7f7b5fc6bd44a82fd73a431",
+    "characters/robot-male.svg": "ab7b023ef5e0516c14adb09b10b3a648a20a4e0584485306ba5c683847937695",
+    "contracts/animation-code-contract.md": "2ea350ed5669785d0346aeb82f2616112964dcc0beed18d049b28a6ced8a6f26",
+    "contracts/story.schema.json": "cbfafe5d14abce11d5310e474f6f5772a15d64b1802dd4f77adee3a7618046cc",
+    "environments/rainy-room/environment-config.json": "caf489c3227f60d56016f3033076bc1165754c3d15b66d3ca0f3a9f95dba169d",
+    "motions/interaction-catalog.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "motions/motion-catalog.json": "cb48db0f739503ee2f7db446f2f8ff18c6ad4afbf1b5a5eab1421386d2fcda53",
+    "motions/motion-library.js": "3752591040951c4065b7bf6c35f83710a13107e2cc7c5a26b587cf33ead1bcb7",
+    "motions/wave.js": "57548cc2f5d05e07aa4a9661f7fbe05418c53a5139737c146408259f33b299eb",
+    "production-manifest.json": "cf5d16e9b9dec6b288b9ad9801a707fb689b21b2ea9b6ebcdf1b19f1d9576304",
+    "storytelling/character-personalities.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "storytelling/episode-rules.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "storytelling/scene-templates.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "storytelling/series-bible.md": "2a2450c5e231ba2e70a859539ed11845c228d456c324968cf95f41e4b664014b",
+    "storytelling/story-patterns.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "selected": {
+    "character": "female",
+    "pose": "idle",
+    "expression": "neutral",
+    "motion": "wave"
+  }
+}

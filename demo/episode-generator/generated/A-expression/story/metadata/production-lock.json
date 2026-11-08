@@ -1,0 +1,33 @@
+{
+  "kitId": "robot-series-demo",
+  "version": "1.1.0",
+  "rigVersion": "robot-demo-v1",
+  "kitSha256": "6ca78f77d84c4aaaac6aeb7861ec328b5ee692af2d0f9cf05e0ef58056165c0e",
+  "files": {
+    "audio/audio-catalog.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "characters/character-catalog.json": "422b532fabdaadbfb1988c161c138a6145b3a2b4377bbd4231de6b7110feab2d",
+    "characters/character-rig.json": "1a959c6d111a09f848240dd08640a5caf00422b6af213c68f30326124395453e",
+    "characters/expression-catalog.json": "6eda73b000b71a7695f2edbffe8075c0480dce2c622abcfc33fc84560ce8fec4",
+    "characters/pose-catalog.json": "aa947120263020247311787e55519b7c635077d50e4af38fea4eadc900d709b6",
+    "characters/robot-female.svg": "e06c5a9e688dcf8e0dabf6b8d3b85f407d68d5f4e39ff03dc36d5788e0efe1c3",
+    "characters/robot-male.svg": "6079989f58763eba96134c75a6b2eb0c8ea902b5d05cdcbbb3c1545923284e32",
+    "contracts/animation-code-contract.md": "2ea350ed5669785d0346aeb82f2616112964dcc0beed18d049b28a6ced8a6f26",
+    "contracts/story.schema.json": "cbfafe5d14abce11d5310e474f6f5772a15d64b1802dd4f77adee3a7618046cc",
+    "environments/rainy-room/environment-config.json": "caf489c3227f60d56016f3033076bc1165754c3d15b66d3ca0f3a9f95dba169d",
+    "motions/interaction-catalog.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "motions/motion-catalog.json": "2935e74891ee988717b82e4584813b73ae579e1a6352c4f3a9ec5be104645a39",
+    "motions/motion-library.js": "3752591040951c4065b7bf6c35f83710a13107e2cc7c5a26b587cf33ead1bcb7",
+    "production-manifest.json": "16e3c0f5f9cf1a8502d5337d9796c80575776201cae9848b7195d1e63f2ab5dd",
+    "storytelling/character-personalities.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "storytelling/episode-rules.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "storytelling/scene-templates.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "storytelling/series-bible.md": "2a2450c5e231ba2e70a859539ed11845c228d456c324968cf95f41e4b664014b",
+    "storytelling/story-patterns.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "selected": {
+    "character": "male",
+    "pose": "idle",
+    "expression": "happy",
+    "motion": "nod"
+  }
+}

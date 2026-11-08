@@ -1,0 +1,8 @@
+{
+  "id": "robot-demo",
+  "title": "Robot Production Kit Demo",
+  "character": "male",
+  "pose": "arms-open",
+  "expression": "neutral",
+  "motion": "nod-open"
+}
